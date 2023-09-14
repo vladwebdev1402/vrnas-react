@@ -10,9 +10,6 @@ const MainPage: FC = () => {
       <img className={st.imgBgAngel} src={bgAngle} alt="" />
       <Header />
       <HeadAbout />
-      <Advantages />
-      <Advantages />
-      <Advantages />
     </div>
   );
 };

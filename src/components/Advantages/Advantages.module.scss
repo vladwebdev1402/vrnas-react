@@ -12,4 +12,22 @@
     rgba(255, 255, 255, 0.3) -0.29%,
     rgba(255, 255, 255, 0) 100%
   );
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  animation: visibleAnimation .8s ease-in-out;
+}
+
+@keyframes visibleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

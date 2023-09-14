@@ -10,10 +10,6 @@ const Advantages = () => {
   const ref = useRef(null);
   const isVisible = useObserve(ref);
 
-  useEffect(() => {
-    console.log(isVisible);
-  }, [isVisible]);
-
   return (
     <div
       className={`${st.advantagesContainer} ${isVisible ? st.visible : ""}`}
