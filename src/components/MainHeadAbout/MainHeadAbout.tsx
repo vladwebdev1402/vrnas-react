@@ -9,7 +9,7 @@ import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
 import Advantages from "../Advantages/Advantages";
 import { useObserve } from "../../hooks/useObserve";
 import VideoContainer from "../VideoContainer/VideoContainer";
-const HeadAbout = () => {
+const MainHeadAbout = () => {
   const vrManRef = useRef(null);
   const vrManVisible = useObserve(vrManRef);
   return (
@@ -56,4 +56,4 @@ const HeadAbout = () => {
   );
 };
 
-export default HeadAbout;
+export default MainHeadAbout;

@@ -17,10 +17,23 @@
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 83px;
+  line-height: 58px;
   letter-spacing: -0.005em;
+}
+
+.gradient_txt {
+  font-weight: 500;
+  letter-spacing: 14%;
+  line-height: 20.8px;
+  color: transparent;    
+	background-clip: text;
+  box-decoration-break:clone;
+  background-image: var(--bg-linear);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
 }
 
 .subtitle {

@@ -37,7 +37,6 @@
       rgba(28, 196, 249, 0.8) 0.72%,
       rgba(254, 105, 254, 0.8) 90.69%
     );
-
     filter: blur(150px);
     border-radius: 88% 12% 88% 12%/20% 37% 63% 80%;
   }
@@ -51,6 +50,8 @@
   
 }
 .headAbout_main_title {
+  font-size: 64px;
+  line-height: 83.2px;
   animation: title 1s ease-in-out;
 }
 .headAbout_main_subtitle {
@@ -155,15 +156,6 @@
   100%{
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes mainVideo {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
   }
 }
 

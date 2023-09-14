@@ -1,11 +1,16 @@
 
 .video {
     background-color: rgba(33, 35, 46, 1);
+    width: 196px;
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0px 35px;
     overflow: hidden;
     position: relative;
     transition: 0.3s;
-    animation: mainVideo 1s ease-in-out;
+    animation: video 1s ease-in-out;
     cursor: pointer;
     img {
         transition: 0.5s;
@@ -26,6 +31,15 @@
     left: calc(50% - 14px);
     z-index: 2;
     transition: 0.2s;
+  }
+
+  @keyframes video {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
   }
   
   

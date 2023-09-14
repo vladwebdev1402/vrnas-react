@@ -7,7 +7,7 @@ interface Props {
 }
 const VideoContainer: FC<Props> = ({ img, className = "" }) => {
   return (
-    <div className={`${className} ${st.video}`}>
+    <div className={`${st.video} ${className}`}>
       <img className={st.video__play} src={playIcon} alt="" />
       <img src={img} alt="" />
     </div>

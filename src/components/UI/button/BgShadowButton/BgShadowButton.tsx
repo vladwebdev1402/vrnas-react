@@ -1,9 +1,16 @@
 import React, { FC } from "react";
 import st from "./BgShadowButton.module.scss";
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
-const BgShadowButton: FC<Props> = ({ className, children, ...props }) => {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  myRef?: React.RefObject<any>;
+}
+const BgShadowButton: FC<Props> = ({
+  className,
+  children,
+  myRef,
+  ...props
+}) => {
   return (
-    <button {...props} className={`${className} ${st.btn}`}>
+    <button {...props} className={`${className} ${st.btn}`} ref={myRef}>
       {children}
     </button>
   );
