@@ -26,23 +26,27 @@ const HeadAbout = () => {
           <div className={st.headAbout_main_users_info}>
             <div className={st.users_wrapper}>
               <div className={st.users_wrapper_img_container}>
-                <img src={user1} />
-                <img src={user2} />
-                <img src={user3} />
+                <img src={user1} alt="" />
+                <img src={user2} alt="" />
+                <img src={user3} alt="" />
                 <span className={st.users_wrapper_subtitle}>
                   <span className={st.boldTxt}>32k+</span> Happy Client
                 </span>
               </div>
             </div>
             <div className={st.headAbout_main_video}>
-              <img className={st.headAbout_main_video_play} src={playIcon} />
+              <img
+                className={st.headAbout_main_video_play}
+                src={playIcon}
+                alt=""
+              />
 
-              <img src={videoIm} />
+              <img src={videoIm} alt="" />
             </div>
           </div>
         </div>
         <div className={`${st.headAbout_body_img}`}>
-          <img src={manvr} />
+          <img src={manvr} alt="" />
         </div>
       </div>
       <Advantages />

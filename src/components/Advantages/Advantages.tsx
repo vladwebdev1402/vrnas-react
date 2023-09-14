@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import st from "./Advantages.module.scss";
 import icon1 from "../../assets/advantage/advantage1.svg";
 import icon2 from "../../assets/advantage/advantage2.svg";
 import icon3 from "../../assets/advantage/advantage3.svg";
 import AdvantagesItem from "./AdvantagesItem/AdvantagesItem";
+import { useObserve } from "../../hooks/useObserve";
+
 const Advantages = () => {
+  const ref = useRef(null);
+  const isVisible = useObserve(ref);
+
+  useEffect(() => {
+    console.log(isVisible);
+  }, [isVisible]);
+
   return (
-    <div className={st.advantagesContainer}>
+    <div
+      className={`${st.advantagesContainer} ${isVisible ? st.visible : ""}`}
+      ref={ref}
+    >
       <AdvantagesItem
         img={icon1}
         title={"Expertise"}
