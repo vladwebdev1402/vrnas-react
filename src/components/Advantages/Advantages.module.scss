@@ -1,0 +1,15 @@
+.advantagesContainer {
+  width: 100%;
+  padding: 42px 64px;
+  background-color: var(--black-50);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    94.92deg,
+    rgba(255, 255, 255, 0.3) -0.29%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

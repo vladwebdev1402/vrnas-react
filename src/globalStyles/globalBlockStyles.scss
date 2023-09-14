@@ -1,0 +1,31 @@
+.bounding-container {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  color: var(--gray-2);
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s;
+  line-height: 28px;
+  &:hover {
+    color: var(--white);
+  }
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 83px;
+  letter-spacing: -0.005em;
+}
+
+.subtitle {
+  color: var(--gray-2);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}

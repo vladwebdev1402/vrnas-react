@@ -1,0 +1,37 @@
+@import url(./fonts.scss);
+@import url(./reset.scss);
+@import url(./globalBlockStyles.scss);
+:root {
+  --black-100: #18181b;
+  --black-50: #252532;
+  --gray-1: #b0b0b2;
+  --gray-2: #d1d1d1;
+  --white: #ffffff;
+  --success: #00c566;
+  --error: #ff4747;
+  --warning: #facc15;
+  --bg-linear: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%),
+    linear-gradient(
+      207.9deg,
+      rgba(255, 255, 255, 0.6) -20.82%,
+      rgba(255, 255, 255, 0) 45.55%
+    );
+  --bg-puple-10: linear-gradient(0deg, #ca6aeb, #ca6aeb),
+    linear-gradient(
+      207.9deg,
+      rgba(255, 255, 255, 0.6) -20.82%,
+      rgba(255, 255, 255, 0) 45.55%
+    );
+  --bg-blue: linear-gradient(0deg, #19b5f1, #19b5f1),
+    linear-gradient(
+      207.9deg,
+      rgba(255, 255, 255, 0.6) -20.82%,
+      rgba(255, 255, 255, 0) 45.55%
+    );
+}
+body {
+  color: var(--white);
+  background-color: var(--black-100);
+  font-family: "ChakraPetch";
+  height: 1000px;
+}
