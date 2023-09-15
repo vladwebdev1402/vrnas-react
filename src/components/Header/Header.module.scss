@@ -45,6 +45,7 @@
   }
 }
 
+
 .header__burger {
   position: fixed;
   overflow: scroll;
@@ -70,8 +71,6 @@
   }
 }
 
-
-
 .burger__nav {
   display: flex;
   flex-direction: column;
@@ -80,12 +79,38 @@
   height: 100%;
 
   li {
-    font-size: 25px !important;
+    font-size: 25px;
   }
 }
+.burger_contact_btn {
+  margin-top: 25px;
+  width: 100%;
+  display: none;
+}
+
 
 @media (max-width: 992px) {
-  .header_menu {
+  .header__menu {
     gap: 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact_btn {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+
+  .burger_contact_btn {
+    display: inline-block;
+  }
+}
+

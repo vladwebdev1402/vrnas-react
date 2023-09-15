@@ -1,9 +1,9 @@
 .burger {
+    display: none;
     margin-left: 10px;
     height: 46px;
     width: 46px;
     padding: 12px 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -12,7 +12,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-  
 }
 
 .burger__line {
@@ -54,5 +53,11 @@
     }
     .line3 {
         rotate: 45deg;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
     }
 }

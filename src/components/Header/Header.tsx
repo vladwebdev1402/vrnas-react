@@ -48,7 +48,7 @@ const Header: FC = () => {
           </ul>
         </nav>
         <div className={st.header__options}>
-          <BorderButton className={st.btn}>Contact Us</BorderButton>
+          <BorderButton className={st.contact_btn}>Contact Us</BorderButton>
           <BurgerButton
             active={openBurger}
             onClick={() => {
@@ -76,6 +76,9 @@ const Header: FC = () => {
               <a href="#">Blog</a>
             </li>
           </ul>
+          <BorderButton className={st.burger_contact_btn}>
+            Contact Us
+          </BorderButton>
         </nav>
       </div>
     </header>
