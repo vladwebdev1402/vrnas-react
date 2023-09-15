@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import st from "./MainAboutUs.module.scss";
 import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
-import VideoContainer from "../VideoContainer/VideoContainer";
+import MiniVideoContainer from "../MiniVideoContainer/MiniVideoContainer";
 import vrGlases from "../../assets/mainAboutUs/vr_glasses.png";
 import man from "../../assets/mainAboutUs/man.png";
 import { useObserve } from "../../hooks/useObserve";
@@ -12,10 +12,10 @@ const MainAboutUs = () => {
   const listRef = useRef(null);
   const btnRef = useRef(null);
   const imgRef = useRef(null);
-  const visibileGradient = useObserve(gradientRef);
-  const visibileTitle = useObserve(titleRef);
-  const visibileSubtitle = useObserve(subtitleRef);
-  const visibileList = useObserve(listRef);
+  const visibileGradient = useObserve(gradientRef, 1);
+  const visibileTitle = useObserve(titleRef, 1);
+  const visibileSubtitle = useObserve(subtitleRef, 1);
+  const visibileList = useObserve(listRef, 1);
   const visibileImg = useObserve(imgRef);
   const visibileBtn = useObserve(btnRef);
 
@@ -32,9 +32,10 @@ const MainAboutUs = () => {
         ref={imgRef}
       >
         <img className={st.manImg} src={man} alt="" />
-        <VideoContainer className={st.video} img={vrGlases} />
+        <MiniVideoContainer className={st.video} img={vrGlases} />
       </div>
       <div className={st.body}>
+        <div className={st.helpContainer}></div>
         <span
           className={`gradient_txt ${
             visibileGradient ? st.visibleUp : st.notVisible

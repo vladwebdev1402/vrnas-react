@@ -10,6 +10,11 @@
   --success: #00c566;
   --error: #ff4747;
   --warning: #facc15;
+  --gray-linear: linear-gradient(
+    94.92deg,
+    rgba(255, 255, 255, 0.3) -0.29%,
+    rgba(255, 255, 255, 0) 100%
+  );
   --bg-linear: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%),
     linear-gradient(
       207.9deg,

@@ -8,7 +8,7 @@ import videoIm from "../../assets/headAbout/video.png";
 import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
 import Advantages from "../Advantages/Advantages";
 import { useObserve } from "../../hooks/useObserve";
-import VideoContainer from "../VideoContainer/VideoContainer";
+import MiniVideoContainer from "../MiniVideoContainer/MiniVideoContainer";
 const MainHeadAbout = () => {
   const vrManRef = useRef(null);
   const vrManVisible = useObserve(vrManRef);
@@ -38,7 +38,7 @@ const MainHeadAbout = () => {
                   </span>
                 </div>
               </div>
-              <VideoContainer img={videoIm} />
+              <MiniVideoContainer img={videoIm} />
             </div>
           </div>
           <div

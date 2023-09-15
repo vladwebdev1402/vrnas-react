@@ -1,0 +1,34 @@
+.pageItem {
+    margin-top: 120px;
+    margin-bottom: 400px;
+}
+
+.service_head {
+    opacity: 0;
+    transition: .8s;
+    transform: translateY(200px);
+    display: flex;
+    justify-content: space-between;
+}
+.service_head_visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.service_head_big {
+    margin-top: 12px;
+    white-space: nowrap;
+}
+
+.service_head_subtitle {
+    flex: 0 1 625px;
+}
+
+.service_body {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 46px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 0px;
+}

@@ -7,11 +7,7 @@
   gap: 50px;
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    94.92deg,
-    rgba(255, 255, 255, 0.3) -0.29%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  border-image-source: var(--gray-linear);
   opacity: 0;
 }
 
