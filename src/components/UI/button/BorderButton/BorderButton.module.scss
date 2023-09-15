@@ -8,12 +8,15 @@
   border-image-slice: 1;
   transition: 0.3s;
 
-  &:hover {
-    color: var(--white);
-    &::before {
-      opacity: 1;
+  @media (min-width: 992px) {
+    &:hover {
+      color: var(--white);
+      &::before {
+        opacity: 1;
+      }
     }
   }
+  
 
   &::before {
     position: absolute;

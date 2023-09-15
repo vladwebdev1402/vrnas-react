@@ -21,9 +21,13 @@
     transition: 0.2s;
   }
 
-  &:hover {
-    &::before {
-      opacity: 1;
+  @media (min-width: 992px) {
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
     }
   }
+  
 }
+
