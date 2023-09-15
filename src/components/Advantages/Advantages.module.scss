@@ -9,21 +9,12 @@
   border-image-slice: 1;
   border-image-source: var(--gray-linear);
   opacity: 0;
+  transform: translateY(200px);
 }
 
 .visible {
   opacity: 1;
-  animation: visibleAnimation .8s ease-in-out;
-}
-
-@keyframes visibleAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-
-  100% {
-    opacity: 1;
     transform: translateY(0);
-  }
+    transition: .8s;
 }
+

@@ -8,7 +8,7 @@ import { useObserve } from "../../hooks/useObserve";
 
 const Advantages = () => {
   const ref = useRef(null);
-  const isVisible = useObserve(ref);
+  const isVisible = useObserve(ref, 0.1);
 
   return (
     <div

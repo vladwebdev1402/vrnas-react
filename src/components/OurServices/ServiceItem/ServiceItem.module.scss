@@ -12,6 +12,7 @@
     border-image-source: var(--gray-linear);
     &:hover {
         border-image-source: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+
         .service__option {
             opacity: 1;
         }
