@@ -18,3 +18,20 @@
     transition: .8s;
 }
 
+@media (max-width: 992px) {
+  .advantagesContainer {
+    padding: 21px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantagesContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 568px) {
+  .advantagesContainer {
+    grid-template-columns: 1fr;
+  }
+}
+

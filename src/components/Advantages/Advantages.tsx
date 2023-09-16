@@ -1,18 +1,22 @@
-import React, { useEffect, useRef } from "react";
+import React, { FC, useEffect, useRef } from "react";
 import st from "./Advantages.module.scss";
 import icon1 from "../../assets/advantage/advantage1.svg";
 import icon2 from "../../assets/advantage/advantage2.svg";
 import icon3 from "../../assets/advantage/advantage3.svg";
 import AdvantagesItem from "./AdvantagesItem/AdvantagesItem";
 import { useObserve } from "../../hooks/useObserve";
-
-const Advantages = () => {
+interface Props {
+  className?: string;
+}
+const Advantages: FC<Props> = ({ className }) => {
   const ref = useRef(null);
   const isVisible = useObserve(ref, 0.1);
 
   return (
     <div
-      className={`${st.advantagesContainer} ${isVisible ? st.visible : ""}`}
+      className={`${st.advantagesContainer} ${
+        isVisible ? st.visible : ""
+      } ${className}`}
       ref={ref}
     >
       <AdvantagesItem

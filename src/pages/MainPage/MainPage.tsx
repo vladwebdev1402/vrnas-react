@@ -8,8 +8,8 @@ const MainPage: FC = () => {
   return (
     <PageWrapper>
       <Header />
-      {/* <MainHeadAbout />
-      <MainAboutUs />
+      <MainHeadAbout />
+      {/* <MainAboutUs />
       <OurServices /> */}
     </PageWrapper>
   );

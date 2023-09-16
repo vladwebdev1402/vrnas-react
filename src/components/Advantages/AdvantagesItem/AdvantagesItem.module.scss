@@ -24,3 +24,12 @@
   font-size: 14px;
   line-height: 28px;
 }
+
+@media (max-width: 768px) and (min-width: 569px) {
+  .container {
+    &:nth-child(3) {
+      grid-column: 1 / 3;
+    }
+  }
+  
+}
