@@ -20,7 +20,7 @@
 }
 
 .service_head_subtitle {
-    flex: 0 1 625px;
+    max-width: 625px;
 }
 
 .service_body {
@@ -29,6 +29,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 46px;
-    grid-template-columns: repeat(3, 1fr);
     gap: 32px 0px;
+}
+
+@media (max-width: 992px) {
+    .service_head {
+        display: block;
+    }
+
+    .service_head_subtitle {
+        margin-top: 12px;
+    }
+
+    .service_body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+  
+    .service_body {
+        grid-template-columns: 1fr;
+    }
 }

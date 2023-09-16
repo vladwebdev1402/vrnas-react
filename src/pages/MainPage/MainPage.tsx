@@ -9,8 +9,8 @@ const MainPage: FC = () => {
     <PageWrapper>
       <Header />
       <MainHeadAbout />
-      {/* <MainAboutUs />
-      <OurServices /> */}
+      <MainAboutUs />
+      <OurServices />
     </PageWrapper>
   );
 };

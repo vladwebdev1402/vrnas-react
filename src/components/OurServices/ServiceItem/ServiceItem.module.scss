@@ -1,6 +1,5 @@
 .service {
     cursor: pointer;
-    min-height: 291px;
     flex: 0 1 calc(33.33% - 15px);
     background-color: var(--black-50);
     padding: 36px 32px 25px 32px;
@@ -21,13 +20,16 @@
             bottom: 30px;
         }
     }
+    @media (min-width: 993px) {
 
-    &:nth-child(2), &:nth-child(5) {
-        top: 57px;
+        &:nth-child(2), &:nth-child(5) {
+            top: 57px;
+        }
+        &:nth-child(3), &:nth-child(6) {
+            top: 135px;
+        }
     }
-    &:nth-child(3), &:nth-child(6) {
-        top: 135px;
-    }
+  
 }
 
 .service__img {

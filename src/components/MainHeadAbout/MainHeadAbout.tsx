@@ -13,8 +13,8 @@ const MainHeadAbout = () => {
   const vrManRef = useRef(null);
   const vrManVisible = useObserve(vrManRef);
   return (
-    <section className={`${st.page_item} bounding-container`}>
-      <div className={`${st.headAbout_body}`}>
+    <section className={`${st.page_item}`}>
+      <div className={`${st.headAbout_body} bounding-container`}>
         <div className={`${st.headAbout_main}`}>
           <h1 className={`${st.headAbout_main_title}`}>
             Immerse Yourself in Virtual Reality
@@ -49,7 +49,9 @@ const MainHeadAbout = () => {
           <img src={manvr} alt="" />
         </div>
       </div>
-      <Advantages />
+      <div className={`bounding-container`}>
+        <Advantages />
+      </div>
     </section>
   );
 };

@@ -35,7 +35,6 @@ const MainAboutUs = () => {
         <MiniVideoContainer className={st.video} img={vrGlases} />
       </div>
       <div className={st.body}>
-        <div className={st.helpContainer}></div>
         <span
           className={`gradient_txt ${
             visibileGradient ? st.visibleUp : st.notVisible
