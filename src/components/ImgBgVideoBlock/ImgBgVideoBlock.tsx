@@ -6,12 +6,14 @@ interface Props {
   manImg: string;
   videoImg: string;
   className?: string;
+  videoClassName?: string;
   visibleClassName?: string;
 }
 const ImgBgVideoBlock: FC<Props> = ({
   manImg,
   videoImg,
   className = "",
+  videoClassName = "",
   visibleClassName = "",
 }) => {
   const imgRef = useRef(null);
@@ -24,7 +26,10 @@ const ImgBgVideoBlock: FC<Props> = ({
       ref={imgRef}
     >
       <img className={st.manImg} src={manImg} alt="" />
-      <MiniVideoContainer className={st.video} img={videoImg} />
+      <MiniVideoContainer
+        className={`${st.video} ${videoClassName}`}
+        img={videoImg}
+      />
     </div>
   );
 };

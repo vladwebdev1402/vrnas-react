@@ -27,6 +27,7 @@ const MainAboutUs = () => {
       <ImgBgVideoBlock
         visibleClassName={st.visibleImg}
         className={st.imgContainer}
+        videoClassName={st.video}
         manImg={man}
         videoImg={vrGlases}
       />

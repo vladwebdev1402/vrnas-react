@@ -28,6 +28,7 @@ h1 {
   letter-spacing: 14%;
   line-height: 20.8px;
   color: transparent;    
+  text-transform: uppercase;
 	background-clip: text;
   box-decoration-break:clone;
   background-image: var(--bg-linear);
@@ -46,3 +47,5 @@ h1 {
 .scroll_lock {
   overflow: hidden;
 }
+
+
