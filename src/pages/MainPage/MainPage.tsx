@@ -4,6 +4,7 @@ import MainHeadAbout from "../../components/MainHeadAbout/MainHeadAbout";
 import MainAboutUs from "../../components/MainAboutUs/MainAboutUs";
 import PageWrapper from "../../components/UI/PageWrapper/PageWrapper";
 import OurServices from "../../components/OurServices/OurServices";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -11,6 +12,7 @@ const MainPage: FC = () => {
       <MainHeadAbout />
       <MainAboutUs />
       <OurServices />
+      <WhyChooseUs />
     </PageWrapper>
   );
 };

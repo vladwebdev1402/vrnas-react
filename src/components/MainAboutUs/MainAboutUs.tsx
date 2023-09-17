@@ -5,18 +5,17 @@ import MiniVideoContainer from "../MiniVideoContainer/MiniVideoContainer";
 import vrGlases from "../../assets/mainAboutUs/vr_glasses.png";
 import man from "../../assets/mainAboutUs/man.png";
 import { useObserve } from "../../hooks/useObserve";
+import ImgBgVideoBlock from "../ImgBgVideoBlock/ImgBgVideoBlock";
 const MainAboutUs = () => {
   const gradientRef = useRef(null);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const listRef = useRef(null);
   const btnRef = useRef(null);
-  const imgRef = useRef(null);
   const visibileGradient = useObserve(gradientRef, 1);
   const visibileTitle = useObserve(titleRef, 1);
   const visibileSubtitle = useObserve(subtitleRef, 1);
   const visibileList = useObserve(listRef, 1);
-  const visibileImg = useObserve(imgRef);
   const visibileBtn = useObserve(btnRef);
 
   return (
@@ -25,15 +24,12 @@ const MainAboutUs = () => {
         visibileGradient ? st.visibleUp : ""
       }`}
     >
-      <div
-        className={`${st.imgContainer} ${
-          visibileImg ? st.visibleImg : st.notVisible
-        }`}
-        ref={imgRef}
-      >
-        <img className={st.manImg} src={man} alt="" />
-        <MiniVideoContainer className={st.video} img={vrGlases} />
-      </div>
+      <ImgBgVideoBlock
+        visibleClassName={st.visibleImg}
+        className={st.imgContainer}
+        manImg={man}
+        videoImg={vrGlases}
+      />
       <div className={st.body}>
         <span
           className={`gradient_txt ${

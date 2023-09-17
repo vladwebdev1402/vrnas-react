@@ -1,6 +1,6 @@
 .pageItem {
     margin-top: 120px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 
 .service_head {
@@ -45,6 +45,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
+    }
+
+    .pageItem {
+        margin-bottom: 150px;
     }
 }
 
