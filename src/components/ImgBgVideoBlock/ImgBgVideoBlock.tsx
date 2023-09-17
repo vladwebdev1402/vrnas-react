@@ -21,7 +21,7 @@ const ImgBgVideoBlock: FC<Props> = ({
   return (
     <div
       className={`${st.imgContainer} ${className} ${
-        visibleImg ? visibleClassName : st.notVisible
+        visibleImg ? visibleClassName : "notVisible"
       }`}
       ref={imgRef}
     >

@@ -1,4 +1,9 @@
+.notVisible {
+    opacity: 0;
+}
+
 .visibleToUp, .visibleToLeft, .visibleToRihgt {
+    transition: opacity .8s ease-in-out;
     opacity: 1;
   }
   
@@ -10,8 +15,8 @@
     animation: visibleToLeftAnim .8s ease-in-out;
   }
 
-  .visibleToRihgt {
-    animation: visibleToRihgtAnim .8s ease-in-out;
+  .visibleToRight {
+    animation: visibleToRightAnim .8s ease-in-out;
   }
   
   @keyframes visibleToUpAnim {
@@ -37,7 +42,7 @@
     }
 }
 
-@keyframes visibleToLefttAnim {
+@keyframes visibleToLeftAnim {
     0% {
         opacity: 0;
         transform: translateX(200px)

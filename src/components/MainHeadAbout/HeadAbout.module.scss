@@ -16,9 +16,7 @@
   position: relative;
   flex: 0 1 526px;
   align-self: flex-end;
-  img {
-    opacity: 0;
-  }
+  // opacity: 0;
   &::after {
     position: absolute;
     content: "";
@@ -37,12 +35,6 @@
   }
 }
 
-.headAbout_body_img_visible {
-  animation: bodyImg .6s ease-in-out;
-  img{
-    opacity: 1;
-  }
-}
 .headAbout_main {
   flex: 0 1 548px;
   margin-top: 74px;
@@ -144,17 +136,6 @@
   100%{
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes bodyImg {
-  0%{
-    opacity: 0;
-    transform: translateX(80px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 

@@ -10,12 +10,12 @@ interface Props {
 }
 const Advantages: FC<Props> = ({ className }) => {
   const ref = useRef(null);
-  const isVisible = useObserve(ref, 0.1);
+  const isVisible = useObserve(ref);
 
   return (
     <div
       className={`${st.advantagesContainer} ${
-        isVisible ? st.visible : ""
+        isVisible ? "visibleToUp" : "notVisible"
       } ${className}`}
       ref={ref}
     >

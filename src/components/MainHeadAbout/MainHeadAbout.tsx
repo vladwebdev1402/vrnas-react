@@ -42,7 +42,7 @@ const MainHeadAbout = () => {
         </div>
         <div
           className={`${st.headAbout_body_img} ${
-            vrManVisible ? st.headAbout_body_img_visible : ""
+            vrManVisible ? "visibleToLeft" : "notVisible"
           }`}
           ref={vrManRef}
         >

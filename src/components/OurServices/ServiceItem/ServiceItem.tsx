@@ -11,7 +11,10 @@ const ServiceItem: FC<Props> = ({ img, title, description }) => {
   const ref = useRef(null);
   const isVisible = useObserve(ref, 0.9);
   return (
-    <div className={`${st.service} ${isVisible ? st.visible : ""}`} ref={ref}>
+    <div
+      className={`${st.service} ${isVisible ? "visibleToUp" : "notVisible"}`}
+      ref={ref}
+    >
       <div className={st.service__img}>
         <img src={img} alt="" />
       </div>

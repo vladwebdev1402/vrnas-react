@@ -25,7 +25,7 @@ const MainAboutUs = () => {
       }`}
     >
       <ImgBgVideoBlock
-        visibleClassName={st.visibleImg}
+        visibleClassName={"visibleToRight"}
         className={st.imgContainer}
         videoClassName={st.video}
         manImg={man}
@@ -34,7 +34,7 @@ const MainAboutUs = () => {
       <div className={st.body}>
         <span
           className={`gradient_txt ${
-            visibileGradient ? st.visibleUp : st.notVisible
+            visibileGradient ? "visibleToUp" : "notVisible"
           }`}
           ref={gradientRef}
         >
@@ -42,7 +42,7 @@ const MainAboutUs = () => {
         </span>
         <h1
           className={`${st.body_title} ${
-            visibileTitle ? st.visibleUp : st.notVisible
+            visibileTitle ? "visibleToUp" : "notVisible"
           }`}
           ref={titleRef}
         >
@@ -50,7 +50,7 @@ const MainAboutUs = () => {
         </h1>
         <div
           className={`subtitle ${st.body_subtitle} ${
-            visibileSubtitle ? st.visibleUp : st.notVisible
+            visibileSubtitle ? "visibleToUp" : "notVisible"
           }`}
           ref={subtitleRef}
         >
@@ -61,7 +61,7 @@ const MainAboutUs = () => {
         </div>
         <ul
           className={`${st.body_list} ${
-            visibileList ? st.visibleUp : st.notVisible
+            visibileList ? "visibleToUp" : "notVisible"
           }`}
           ref={listRef}
         >
@@ -71,7 +71,7 @@ const MainAboutUs = () => {
         </ul>
         <BgShadowButton
           className={`${st.body_btn} ${
-            visibileBtn ? st.visibleUp : st.notVisible
+            visibileBtn ? "visibleToUp" : "notVisible"
           }`}
           myRef={btnRef}
         >
