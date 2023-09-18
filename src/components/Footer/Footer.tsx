@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useRef } from "react";
 import st from "./Footer.module.scss";
 import logo from "../../assets/logo.svg";
 import twitterIm from "../../assets/footerIcons/twitter.svg";
@@ -10,11 +10,19 @@ import MapIcon from "../UI/icons/MapIcon";
 import MailIcon from "../UI/icons/MailIcon";
 import PhoneIcon from "../UI/icons/PhoneIcon";
 import LinskList from "./LinskList";
+import { useObserve } from "../../hooks/useObserve";
 
 const Footer: FC = () => {
+  const wrapperRef = useRef(null);
+  const isVisible = useObserve(wrapperRef);
   return (
     <footer className={`${st.footer}`}>
-      <div className={`${st.footer__wrapper} bounding-container`}>
+      <div
+        className={`${st.footer__wrapper} bounding-container ${
+          isVisible ? "visibleToUp" : "notVisible"
+        }`}
+        ref={wrapperRef}
+      >
         <div className={`${st.footer__body}`}>
           <div className={st.footer__contacts}>
             <a href="#">
