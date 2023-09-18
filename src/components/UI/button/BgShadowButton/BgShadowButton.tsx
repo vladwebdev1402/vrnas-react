@@ -1,16 +1,18 @@
-import React, { FC } from "react";
+import React, { FC, useRef } from "react";
 import st from "./BgShadowButton.module.scss";
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  myRef?: React.RefObject<any>;
-}
-const BgShadowButton: FC<Props> = ({
-  className,
-  children,
-  myRef,
-  ...props
-}) => {
+import { useObserve } from "../../../../hooks/useObserve";
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+const BgShadowButton: FC<Props> = ({ className, children, ...props }) => {
+  const ref = useRef(null);
+  const isVisible = useObserve(ref);
   return (
-    <button {...props} className={`${className} ${st.btn}`} ref={myRef}>
+    <button
+      ref={ref}
+      {...props}
+      className={`${className} ${st.btn} ${
+        isVisible ? "visibleToUp" : "notVisible"
+      }`}
+    >
       {children}
     </button>
   );

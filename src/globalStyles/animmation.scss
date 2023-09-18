@@ -1,5 +1,7 @@
 .notVisible {
     opacity: 0;
+    transform: translateY(50px)
+
 }
 
 .visibleToUp, .visibleToLeft, .visibleToRihgt {

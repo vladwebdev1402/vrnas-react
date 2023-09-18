@@ -17,6 +17,8 @@ const MainPage: FC = () => {
       <WhyChooseUs />
       <VideoContainer
         startedLink=""
+        videoTitle="How to get started"
+        nameMarker="VR Service"
         img={videoImg}
         title="Bringing Your Virtual Reality
         Dreams to Life"

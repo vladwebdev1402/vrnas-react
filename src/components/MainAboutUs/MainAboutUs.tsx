@@ -10,12 +10,10 @@ const MainAboutUs = () => {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const listRef = useRef(null);
-  const btnRef = useRef(null);
   const visibileGradient = useObserve(gradientRef, 1);
   const visibileTitle = useObserve(titleRef, 1);
   const visibileSubtitle = useObserve(subtitleRef, 1);
   const visibileList = useObserve(listRef, 1);
-  const visibileBtn = useObserve(btnRef, 1);
 
   return (
     <section
@@ -68,14 +66,7 @@ const MainAboutUs = () => {
           <li className={st.list_item}>Versatile Applications</li>
           <li className={st.list_item}>Affordable and Accessible</li>
         </ul>
-        <BgShadowButton
-          className={`${st.body_btn} ${
-            visibileBtn ? "visibleToUp" : "notVisible"
-          }`}
-          myRef={btnRef}
-        >
-          read more
-        </BgShadowButton>
+        <BgShadowButton className={`${st.body_btn}`}>read more</BgShadowButton>
       </div>
     </section>
   );
