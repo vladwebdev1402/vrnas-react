@@ -12,6 +12,7 @@
 .footer__body {
     display: flex;
     justify-content: space-between;
+    column-gap: 30px;
 }
 
 .footer__contacts {
@@ -56,9 +57,13 @@
     display: flex;
     justify-content: space-between;
     flex: 0 1 771px;
+    gap: 40px 50px;
 }
 
-.footer__links__container {}
+.footer__links__container {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
 
 .footer__links__title {
     font-weight: 600;
@@ -106,4 +111,27 @@
     margin-top: 32px;
     text-align: center;
     font-weight: 300;
+}
+
+@media (max-width: 992px) {
+    .footer__body {
+        display: block;
+    }
+
+    .footer__contacts  {
+        flex-direction: row;
+    }
+
+    .footer__links {
+        margin-top: 64px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__contacts {
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
 }
