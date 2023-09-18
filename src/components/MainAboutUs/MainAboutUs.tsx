@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import st from "./MainAboutUs.module.scss";
 import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
-import MiniVideoContainer from "../MiniVideoContainer/MiniVideoContainer";
 import vrGlases from "../../assets/mainAboutUs/vr_glasses.png";
 import man from "../../assets/mainAboutUs/man.png";
 import { useObserve } from "../../hooks/useObserve";

@@ -39,6 +39,11 @@
     .choose {
         flex-direction: column-reverse;
         gap: 75px;
+        padding: 5px;
+    }
+
+    .choose__body {
+        padding: 0 11px;
     }
 
     .choose__img {
