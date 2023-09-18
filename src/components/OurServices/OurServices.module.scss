@@ -57,4 +57,15 @@
     .service_body {
         grid-template-columns: 1fr;
     }
+
+    .pageItem {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 568px) {
+ 
+    .pageItem {
+        margin-bottom: 100px;
+    }
 }

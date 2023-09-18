@@ -16,15 +16,6 @@ const WhyChooseUs: FC<Props> = ({}) => {
   return (
     <section>
       <div className={`bounding-container ${st.choose}`}>
-        <div className={st.choose__img}>
-          <ImgBgVideoBlock
-            className={st.choose__img_man}
-            videoClassName={st.choose__img_video}
-            visibleClassName="visibleToLeft"
-            manImg={manImg}
-            videoImg={videoImg}
-          />
-        </div>
         <div className={st.choose__body}>
           <span
             className={`gradient_txt ${
@@ -61,6 +52,15 @@ const WhyChooseUs: FC<Props> = ({}) => {
               description="We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences."
             />
           </div>
+        </div>
+        <div className={st.choose__img}>
+          <ImgBgVideoBlock
+            className={st.choose__img_man}
+            videoClassName={st.choose__img_video}
+            visibleClassName="visibleToLeft"
+            manImg={manImg}
+            videoImg={videoImg}
+          />
         </div>
       </div>
     </section>

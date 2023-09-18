@@ -16,7 +16,7 @@ const MainAboutUs = () => {
   const visibileTitle = useObserve(titleRef, 1);
   const visibileSubtitle = useObserve(subtitleRef, 1);
   const visibileList = useObserve(listRef, 1);
-  const visibileBtn = useObserve(btnRef);
+  const visibileBtn = useObserve(btnRef, 1);
 
   return (
     <section
