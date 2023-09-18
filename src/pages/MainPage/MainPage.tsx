@@ -5,6 +5,8 @@ import MainAboutUs from "../../components/MainAboutUs/MainAboutUs";
 import PageWrapper from "../../components/UI/PageWrapper/PageWrapper";
 import OurServices from "../../components/OurServices/OurServices";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+import VideoContainer from "../../components/VideoContainer/VideoContainer";
+import videoImg from "../../assets/videoBgImages/mainPageVideoBg.png";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -13,6 +15,13 @@ const MainPage: FC = () => {
       <MainAboutUs />
       <OurServices />
       <WhyChooseUs />
+      <VideoContainer
+        startedLink=""
+        img={videoImg}
+        title="Bringing Your Virtual Reality
+        Dreams to Life"
+        gradient="HOW TO GET STARTED"
+      />
     </PageWrapper>
   );
 };

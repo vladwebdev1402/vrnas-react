@@ -21,7 +21,7 @@ const DropInfoMenu: FC<Props> = ({ title, description }) => {
   }, [isOpen, ref]);
 
   return (
-    <div className={`${st.menu} ${isOpen ? st.menu_open : ""}`}>
+    <div className={`menu ${isOpen ? st.menu_open : ""}`}>
       <button className={st.menu__head} onClick={clickMenu}>
         <div className={st.menu__title}>{title}</div>
         <div className={st.menu__title__icon}>
