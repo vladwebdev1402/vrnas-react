@@ -4,7 +4,7 @@ import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
 import vrGlases from "../../assets/mainAboutUs/vr_glasses.png";
 import man from "../../assets/mainAboutUs/man.png";
 import { useObserve } from "../../hooks/useObserve";
-import ImgBgVideoBlock from "../ImgBgVideoBlock/ImgBgVideoBlock";
+import ImgBgVideoBlock from "../UI/ImgBgVideoBlock/ImgBgVideoBlock";
 const MainAboutUs = () => {
   const gradientRef = useRef(null);
   const titleRef = useRef(null);

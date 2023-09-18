@@ -1,6 +1,6 @@
 import React, { FC, useRef } from "react";
 import st from "./WhyChooseUs.module.scss";
-import ImgBgVideoBlock from "../ImgBgVideoBlock/ImgBgVideoBlock";
+import ImgBgVideoBlock from "../UI/ImgBgVideoBlock/ImgBgVideoBlock";
 import manImg from "../../assets/whyChoose/man.png";
 import videoImg from "../../assets/whyChoose/video.png";
 import DropInfoMenu from "../UI/DropInfoMenu/DropInfoMenu";

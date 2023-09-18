@@ -1,7 +1,7 @@
 import React, { FC, RefObject, useRef } from "react";
 import st from "./ImgBgVideoBlock.module.scss";
-import MiniVideoContainer from "../MiniVideoContainer/MiniVideoContainer";
-import { useObserve } from "../../hooks/useObserve";
+import MiniVideoContainer from "../Video/MiniVideoContainer/MiniVideoContainer";
+import { useObserve } from "../../../hooks/useObserve";
 interface Props {
   manImg: string;
   videoImg: string;

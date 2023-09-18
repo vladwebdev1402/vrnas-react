@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import st from "./VideoContainer.module.scss";
-import playIcon from "../../assets/icons/playbutton.svg";
+import playIcon from "../../../../assets/icons/playbutton.svg";
 interface Props {
   img: string;
   className?: string;

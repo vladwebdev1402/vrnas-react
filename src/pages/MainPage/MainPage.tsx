@@ -5,8 +5,9 @@ import MainAboutUs from "../../components/MainAboutUs/MainAboutUs";
 import PageWrapper from "../../components/UI/PageWrapper/PageWrapper";
 import OurServices from "../../components/OurServices/OurServices";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
-import VideoContainer from "../../components/VideoContainer/VideoContainer";
 import videoImg from "../../assets/videoBgImages/mainPageVideoBg.png";
+import VideoContainer from "../../components/UI/Video/VideoContainer/VideoContainer";
+import Footer from "../../components/Footer/Footer";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -24,6 +25,7 @@ const MainPage: FC = () => {
         Dreams to Life"
         gradient="HOW TO GET STARTED"
       />
+      <Footer />
     </PageWrapper>
   );
 };

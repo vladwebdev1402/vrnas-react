@@ -1,9 +1,9 @@
 import React, { FC, useRef } from "react";
 import st from "./VideoContainer.module.scss";
-import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
-import playBigImg from "../../assets/icons/playButtonBig.svg";
-import playSmallImg from "../../assets/icons/playButtonSmall.svg";
-import { useObserve } from "../../hooks/useObserve";
+import playBigImg from "../../../../assets/icons/playButtonBig.svg";
+import playSmallImg from "../../../../assets/icons/playButtonSmall.svg";
+import BgShadowButton from "../../button/BgShadowButton/BgShadowButton";
+import { useObserve } from "../../../../hooks/useObserve";
 interface Props {
   gradient: string;
   title: string;
