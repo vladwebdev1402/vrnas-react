@@ -6,6 +6,9 @@ import facebookIm from "../../assets/footerIcons/facebook.svg";
 import instIm from "../../assets/footerIcons/inst.svg";
 import gitIm from "../../assets/footerIcons/git.svg";
 import angleBg from "../../assets/footerBgAngle.svg";
+import MapIcon from "../UI/icons/MapIcon";
+import MailIcon from "../UI/icons/MailIcon";
+import PhoneIcon from "../UI/icons/PhoneIcon";
 const Footer: FC = () => {
   return (
     <footer className={`${st.footer}`}>
@@ -103,17 +106,26 @@ const Footer: FC = () => {
               <div className={st.footer__links__title}>Need Help?</div>
               <ul className={st.footer__links__list}>
                 <li className={st.footer__links__item}>
-                  <a className={`link`} href="#">
+                  <a className={`link ${st.footer__link_img}`} href="#">
+                    <div className={st.link__img__container}>
+                      <MapIcon />
+                    </div>
                     Tanjung Sari Street no.48, Pontianak City
                   </a>
                 </li>
                 <li className={st.footer__links__item}>
-                  <a className={`link`} href="#">
+                  <a className={`link ${st.footer__link_img}`} href="#">
+                    <div className={st.link__img__container}>
+                      <MailIcon />
+                    </div>
                     Support@VRNas.com
                   </a>
                 </li>
                 <li className={st.footer__links__item}>
-                  <a className={`link`} href="#">
+                  <a className={`link ${st.footer__link_img}`} href="#">
+                    <div className={st.link__img__container}>
+                      <PhoneIcon />
+                    </div>
                     +123 456 7890
                   </a>
                 </li>

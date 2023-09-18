@@ -72,8 +72,29 @@
     margin-top: 16px;
 }
 
-.footer__links__item {}
-
+.footer__links__item {
+    color: var(--gray-2);
+    svg path {
+        transition: .3s;
+        fill: var(--gray-2);
+    }
+    &:hover {
+        color: var(--white);
+        svg path {
+            fill: var(--white);
+        }
+    }
+}
+.link__img__container {
+    width: 18px;
+    display: flex;
+    justify-content: center;
+}
+.footer__link_img {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
 .footer__divider {
     width: 100%;
     margin-top: 33px;
