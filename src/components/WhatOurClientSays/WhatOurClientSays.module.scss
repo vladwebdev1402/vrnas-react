@@ -1,0 +1,44 @@
+.reviews {
+    position: relative;
+    background-image: url(../../assets/whatOurClientSays/circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1247px;
+    height: 1247px;
+    margin: 120px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 111px;
+    overflow: hidden;
+}
+
+.circle__img {
+    min-width: 618px;
+    height: 472px;
+    top: 346px;
+}
+
+.reviews__title {
+    margin-top: 12px;
+    text-align: center;
+}
+@media (max-width: 1228px) {
+    .reviews {
+        padding: 0 16px;
+    }
+}
+@media (max-width: 568px) {
+    .reviews {
+        height: 1178px;
+        background-size: 1007px 1007px;       
+        background-position: center bottom;
+    }
+
+    .circle__img {
+        min-width: 499px;
+        height: 381px;
+        top: unset;
+        bottom: 346px;
+    }
+}

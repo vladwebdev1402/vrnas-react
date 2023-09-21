@@ -8,6 +8,7 @@ import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import videoImg from "../../assets/videoBgImages/mainPageVideoBg.png";
 import VideoContainer from "../../components/UI/Video/VideoContainer/VideoContainer";
 import Footer from "../../components/Footer/Footer";
+import WhatOurClientSays from "../../components/WhatOurClientSays/WhatOurClientSays";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -25,6 +26,7 @@ const MainPage: FC = () => {
         Dreams to Life"
         gradient="HOW TO GET STARTED"
       />
+      <WhatOurClientSays />
       <Footer />
     </PageWrapper>
   );
