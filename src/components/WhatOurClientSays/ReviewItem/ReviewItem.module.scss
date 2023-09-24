@@ -1,0 +1,119 @@
+.review {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.review__img {
+    position: relative;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    background-image: url(../../../assets/bg-border-gradient/bg-gray-opacity-border.svg);
+    background-repeat: no-repeat;
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: -1;
+    //     transition: 0.3s;
+    //     opacity: 1;
+    //     background: url(../../../assets/bgShadow/sh-small.svg);
+    //     background-repeat: no-repeat;
+    // }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        background-image: url(../../../assets/bg-border-gradient/bg-linear-opacity-border.svg);
+        background-repeat: no-repeat;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &::after{
+            opacity: 0;
+        }
+        &::before {
+            opacity: 1;
+        } 
+    }
+}
+
+.review__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 255px;
+    margin-left: 16px;
+    color: var(--gray-2);
+    font-size: 12px;
+    line-height: 20px;    
+    padding: 0;
+    // width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .4s;
+    box-sizing: content-box;
+    background-image: url(../../../assets/bg-border-gradient/bg-rect-gray-opacity.svg);
+    background-repeat: no-repeat;
+  
+}
+
+.review__body_open {
+    opacity: 1;
+    // width: auto;
+    padding: 18px 19px 13px 23px;
+    .review__description, .review__info {
+        opacity: 1;
+    }
+
+    .review__img {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+
+.review__info {
+    display: inline-block;
+    margin-top: 8px;
+    line-height: 24px;
+    position: relative;
+    opacity: 0;
+    transition: .1s;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: var(--bg-linear);
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.review__name {
+    color: var(--white);
+}

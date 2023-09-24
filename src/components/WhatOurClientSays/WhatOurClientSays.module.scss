@@ -11,6 +11,7 @@
     align-items: center;
     padding-top: 111px;
     overflow: hidden;
+    transition: .5s;
 }
 
 .circle__img {
@@ -22,6 +23,30 @@
 .reviews__title {
     margin-top: 12px;
     text-align: center;
+}
+.reviews_visible {
+    animation: reviews_visible_anim .6s ease-in-out;
+}
+.review_1 {
+    top: 321px;
+    left: 23px;
+}
+.review_2 {
+    top: 259px;
+    left: calc(50% + 50px);
+}
+.review_3 {
+    left: 165px;
+    bottom: 250px;
+}
+.review_4 {
+    top: 50%;
+    right: 136px;
+}
+.review_5 {
+    bottom: 305px;
+
+    left: 50%;
 }
 @media (max-width: 1228px) {
     .reviews {
@@ -40,5 +65,16 @@
         height: 381px;
         top: unset;
         bottom: 346px;
+    }
+}
+
+@keyframes reviews_visible_anim {
+    0%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
     }
 }

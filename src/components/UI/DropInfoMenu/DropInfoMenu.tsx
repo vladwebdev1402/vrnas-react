@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import st from "./DropInfoMenu.module.scss";
 import arrowImg from "../../../assets/icons/arrow.svg";
+import { useAnimateHeight } from "../../../hooks/useAnimateHeihgt";
 interface Props {
   title: string;
   description: string;
@@ -12,13 +13,7 @@ const DropInfoMenu: FC<Props> = ({ title, description }) => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    if (ref.current && isOpen) {
-      ref.current.style.height = `${ref.current.scrollHeight}px`;
-    } else if (ref.current) {
-      ref.current.style.height = "0px";
-    }
-  }, [isOpen, ref]);
+  useAnimateHeight(ref, isOpen);
 
   return (
     <div className={`menu ${isOpen ? st.menu_open : ""}`}>
