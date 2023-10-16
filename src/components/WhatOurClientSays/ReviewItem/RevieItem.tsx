@@ -1,6 +1,7 @@
 import React, { FC, useState, useRef } from "react";
 import ava from "../../../assets/headAbout/users/user1.png";
 import st from "./ReviewItem.module.scss";
+import bgSh from "../../../assets/bgShadow/sh-small.svg";
 import { useAnimateHeight } from "../../../hooks/useAnimateHeihgt";
 interface Props {
   img: string;
@@ -20,14 +21,14 @@ const RevieItem: FC<Props> = ({
   const [open, setOpen] = useState<boolean>(false);
   useAnimateHeight(ref, open);
   return (
-    <div className={`${className} ${st.review}`}>
+    <div className={`${className} ${st.review} ${open ? st.review_open : ""}`}>
       <div
         className={st.review__img}
         onClick={() => {
           setOpen(!open);
         }}
       >
-        <img src={ava} alt="" />
+        <img className={st.review__ava} src={ava} alt="" />
       </div>
 
       {open && (
