@@ -9,6 +9,7 @@ import videoImg from "../../assets/videoBgImages/mainPageVideoBg.png";
 import VideoContainer from "../../components/UI/Video/VideoContainer/VideoContainer";
 import Footer from "../../components/Footer/Footer";
 import WhatOurClientSays from "../../components/WhatOurClientSays/WhatOurClientSays";
+import AffrodableServices from "../../components/AffrodableServices/AffrodableServices";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -27,6 +28,7 @@ const MainPage: FC = () => {
         gradient="HOW TO GET STARTED"
       />
       {/* <WhatOurClientSays /> */}
+      <AffrodableServices />
       <Footer />
     </PageWrapper>
   );

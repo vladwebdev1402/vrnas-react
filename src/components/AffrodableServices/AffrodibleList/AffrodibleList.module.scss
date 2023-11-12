@@ -1,0 +1,53 @@
+.affrodable__list {
+    position: relative;
+    flex: 1 1 700px;
+    padding: 55px 110px 55px 40px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 55px;
+        height: calc(100% - 110px);
+        width: 1px;
+        background-color: #433E4F;
+    }
+}
+
+.affrodable__item {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+
+    &:first-child {
+        margin-top: 0px;
+    }
+}
+
+.affrodable__item__name {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 23.4px;
+    font-weight: 400;
+}
+
+.affrodable__item__desc {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--gray-1);
+    margin-top: 12px;
+}
+
+@media (max-width: 992px) {
+    .affrodable__list {
+        padding: 32px 22px 48px 22px;
+        flex: 1 1 400px;
+      &::after {
+        bottom: 0;
+        top: unset;
+        right: 22px;
+        height: 1px;
+        width: calc(100% - 44px);
+      }
+    }
+}
