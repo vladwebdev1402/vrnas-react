@@ -1,0 +1,79 @@
+.subscribe {
+    margin-top: 150px;
+    background: var(--bg-linear);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 70px;
+}
+
+.subscribe__head {
+    flex: 0 3 540px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 600;
+    letter-spacing:-0.5%;
+}
+
+.subscribe__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 15px;
+    path {
+        fill: white;
+    }
+}
+.subscribe__form {
+    position: relative;
+    flex: 0 1 365px;
+   
+}
+.subscribe__input {
+    width: 100%;
+    padding: 14px 60px 14px 48px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: var(--white);
+    &::placeholder {
+        color: var(--gray-2)
+    }
+}
+
+.subscribe__btn {
+    position: absolute;
+    width: 50px;
+    height: calc(100% - 7px);
+    background-color: rgba(255, 255, 255, 0.21);
+    right: 3px;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .subscribe  {
+        padding: 30px 30px;
+    }
+    .subscribe__head {
+        font-size: 35px;
+        line-height: 36.4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe  {
+        padding: 31px 13px;
+        display: block;
+    }
+    .subscribe__head {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .subscribe__form {
+        margin-top: 8px;
+    }
+}

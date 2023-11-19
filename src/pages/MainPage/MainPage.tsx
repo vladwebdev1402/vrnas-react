@@ -10,6 +10,7 @@ import VideoContainer from "../../components/UI/Video/VideoContainer/VideoContai
 import Footer from "../../components/Footer/Footer";
 import WhatOurClientSays from "../../components/WhatOurClientSays/WhatOurClientSays";
 import AffrodableServices from "../../components/AffrodableServices/AffrodableServices";
+import Subscribe from "@/components/Subscribe/Subscribe";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -29,6 +30,7 @@ const MainPage: FC = () => {
       />
       {/* <WhatOurClientSays /> */}
       <AffrodableServices />
+      <Subscribe />
       <Footer />
     </PageWrapper>
   );
