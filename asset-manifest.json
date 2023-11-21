@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/vrnas-react/static/css/main.4d018f0a.css",
-    "main.js": "/vrnas-react/static/js/main.673206bd.js",
+    "main.css": "/vrnas-react/static/css/main.a0bb64c4.css",
+    "main.js": "/vrnas-react/static/js/main.508224ad.js",
+    "static/media/slide.png": "/vrnas-react/static/media/slide.ff9113deb547acb6b8ec.png",
     "static/media/footerBgAngle.svg": "/vrnas-react/static/media/footerBgAngle.83ceaa16b39baf0e378cc31a43b0652f.svg",
     "static/media/mainPageVideoBg.png": "/vrnas-react/static/media/mainPageVideoBg.036843d16e643313840c.png",
     "static/media/man.png": "/vrnas-react/static/media/man.9c348101b444e5e6a0d6.png",
@@ -15,10 +16,14 @@
     "static/media/ChakraPetch-Regular.ttf": "/vrnas-react/static/media/ChakraPetch-Regular.f4019d33aae25f6d8eaf.ttf",
     "static/media/ChakraPetch-Bold.ttf": "/vrnas-react/static/media/ChakraPetch-Bold.ac19a2618ff468c4d7a2.ttf",
     "static/media/vr_glasses.png": "/vrnas-react/static/media/vr_glasses.9829441828d88443d64b.png",
+    "static/media/2.png": "/vrnas-react/static/media/2.6757cc58aebb94c58a2c.png",
+    "static/media/1.png": "/vrnas-react/static/media/1.7b688baeb57f3f38e218.png",
+    "static/media/3.png": "/vrnas-react/static/media/3.075761212781438f99eb.png",
     "static/media/advantage2.svg": "/vrnas-react/static/media/advantage2.955e079dc52e28a0739543dbb116b630.svg",
     "static/media/user3.png": "/vrnas-react/static/media/user3.5801e44496691b4eea3f.png",
     "static/media/user1.png": "/vrnas-react/static/media/user1.308b709848f1291d8394.png",
     "static/media/user2.png": "/vrnas-react/static/media/user2.28e0253604f88843f223.png",
+    "static/media/4.png": "/vrnas-react/static/media/4.36d1e6845c5fab514f90.png",
     "static/media/advantage3.svg": "/vrnas-react/static/media/advantage3.46eca3c4ca35bfffc470a077c413f287.svg",
     "static/media/events.svg": "/vrnas-react/static/media/events.eb851b665c14309f45b2956b4164b89b.svg",
     "static/media/entertainment.svg": "/vrnas-react/static/media/entertainment.582b68a3c179794e6be396533c1abe8b.svg",
@@ -43,11 +48,11 @@
     "static/media/bg-linear-border.svg": "/vrnas-react/static/media/bg-linear-border.91a1a5d8a4f5ca23c47c.svg",
     "static/media/playButtonSmall.svg": "/vrnas-react/static/media/playButtonSmall.d4850c51962211188c4faf486dddb4f0.svg",
     "static/media/arrow.svg": "/vrnas-react/static/media/arrow.95d58ee6791445919c521dc8a9173328.svg",
-    "main.4d018f0a.css.map": "/vrnas-react/static/css/main.4d018f0a.css.map",
-    "main.673206bd.js.map": "/vrnas-react/static/js/main.673206bd.js.map"
+    "main.a0bb64c4.css.map": "/vrnas-react/static/css/main.a0bb64c4.css.map",
+    "main.508224ad.js.map": "/vrnas-react/static/js/main.508224ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d018f0a.css",
-    "static/js/main.673206bd.js"
+    "static/css/main.a0bb64c4.css",
+    "static/js/main.508224ad.js"
   ]
 }
