@@ -20,6 +20,10 @@
   .visibleToRight {
     animation: visibleToRightAnim .8s ease-in-out;
   }
+
+  .visibleScale {
+    animation: visibleScale .8s ease-in-out;
+  }
   
   @keyframes visibleToUpAnim {
     0% {
@@ -55,3 +59,14 @@
     }
 }
 
+@keyframes visibleScale {
+  0% {
+      opacity: 0;
+      transform: scale(1.2);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  
+}

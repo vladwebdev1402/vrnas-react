@@ -11,6 +11,7 @@ import Footer from "../../components/Footer/Footer";
 import WhatOurClientSays from "../../components/WhatOurClientSays/WhatOurClientSays";
 import AffrodableServices from "../../components/AffrodableServices/AffrodableServices";
 import Subscribe from "@/components/Subscribe/Subscribe";
+import OurArticles from "@/components/OurArticles/OurArticles";
 const MainPage: FC = () => {
   return (
     <PageWrapper>
@@ -30,6 +31,7 @@ const MainPage: FC = () => {
       />
       {/* <WhatOurClientSays /> */}
       <AffrodableServices />
+      <OurArticles />
       <Subscribe />
       <Footer />
     </PageWrapper>

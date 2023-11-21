@@ -1,0 +1,125 @@
+.articles {
+    margin-top: 150px;
+    margin-left: auto;
+}
+
+.articles__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.articles__heading {
+    h1 {
+        margin-top: 12px;
+    }
+}
+
+
+.btn__all {
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--black-50);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    margin-left: 20px;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.articles__body {
+    position: relative;
+    margin-top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1320px;
+    margin-left: auto;
+}
+
+.recent {
+    background-color: var(--black-50);
+    padding: 32px 72px 0px 97px;
+    max-height: 605px;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: var(--gray-linear);
+}
+
+.articles__title {
+    font-weight: 600;
+    font-size:  28px;
+}
+
+.recent__body {
+    margin-top: 32px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    max-height: 505px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 2px;
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: white;
+    }
+}
+
+.popular {
+    position: absolute;
+    top: 32px;
+    left: 20px;
+}
+
+.popular___body {
+    margin-top: 32px;
+}
+.btn__all_mobile {
+    display: none;
+}
+@media (max-width: 1180px) {
+    .recent {
+        padding: 32px 16px 0px 97px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .articles__body {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .popular {
+        position: static;
+    }
+
+    .recent {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recent {
+        padding: 20px 20px 0px 16px;
+    }
+}
+
+@media (max-width: 568px) {
+    .recent {
+        padding: 20px 20px 0px 16px;
+    }
+
+    .recent__body  {
+        padding-right: 5px;
+        padding-bottom: 0px;
+    }
+
+    .btn__all {
+        display: none;
+    }
+}
