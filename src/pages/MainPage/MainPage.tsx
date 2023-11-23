@@ -29,7 +29,7 @@ const MainPage: FC = () => {
         Dreams to Life"
         gradient="HOW TO GET STARTED"
       />
-      {/* <WhatOurClientSays /> */}
+      <WhatOurClientSays />
       <AffrodableServices />
       <OurArticles />
       <Subscribe />

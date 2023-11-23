@@ -79,7 +79,9 @@
     margin-top: 32px;
 }
 .btn__all_mobile {
+    @extend .btn__all;
     display: none;
+    margin: 32px auto 0 auto;
 }
 @media (max-width: 1180px) {
     .recent {
@@ -121,5 +123,9 @@
 
     .btn__all {
         display: none;
+    }
+
+    .btn__all_mobile {
+        display: inline-block;
     }
 }
