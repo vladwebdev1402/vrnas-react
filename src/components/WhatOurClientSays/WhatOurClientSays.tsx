@@ -20,6 +20,7 @@ const WhatOurClientSays = () => {
       <ImgCircleBg className={st.circle__img} img={man} />
       <RevieItem
         img={""}
+        left={5}
         description="The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs."
         jobTitle="CEO Anono"
         name="Robert Fox"
@@ -27,6 +28,7 @@ const WhatOurClientSays = () => {
       />
       <RevieItem
         img={""}
+        left={55}
         description="Voluptates obcaecati ad magnam non dicta! Inventore maxime deserunt ratione?"
         jobTitle="Producer"
         name="Gerbert Dullsun"
@@ -34,6 +36,7 @@ const WhatOurClientSays = () => {
       />
       <RevieItem
         img={""}
+        left={85}
         description="Lorem ipsum dolor sit amet."
         jobTitle="Main charter"
         name="Keyanu Rocks"
@@ -41,6 +44,7 @@ const WhatOurClientSays = () => {
       />
       <RevieItem
         img={""}
+        left={30}
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nam, illum amet pariatur, nisi eligendi perspiciatis iste eius, unde facere ab quis!"
         jobTitle="Adminstrator"
         name="Ron Potter"
@@ -48,6 +52,7 @@ const WhatOurClientSays = () => {
       />
       <RevieItem
         img={""}
+        left={50}
         description="Nam cumque, similique voluptatem aperiam vel laborum voluptatum."
         jobTitle="EVO Anono"
         name="Albert Socks"

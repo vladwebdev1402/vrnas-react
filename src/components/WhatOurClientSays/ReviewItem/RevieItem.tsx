@@ -4,12 +4,14 @@ import st from "./ReviewItem.module.scss";
 interface Props {
   img: string;
   description: string;
+  left: number; // в процентах
   name: string;
   jobTitle: string;
   className?: string;
 }
 const RevieItem: FC<Props> = ({
   className = "",
+  left,
   name,
   jobTitle,
   description,
@@ -18,43 +20,39 @@ const RevieItem: FC<Props> = ({
   const refBody = useRef<HTMLDivElement>(null);
   const refHead = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState<boolean>(false);
-  const [left, setLeft] = useState(0);
 
   useEffect(() => {
-    setLeft(refHead.current!.offsetLeft);
-  }, [refHead]);
+    const parent = refHead.current!.parentElement;
 
-  useEffect(() => {
-    const resize = () => {
-      const parent = refHead.current!.parentElement;
-      const coef = refHead.current!.offsetLeft / parent!.clientWidth;
-      let curLeft = parent!.clientWidth * coef;
-      setLeft(Math.min(curLeft, parent!.clientWidth - 120));
-    };
-
-    window.addEventListener("resize", resize);
-
-    return () => window.removeEventListener("resize", resize);
-  }, [refHead]);
-
-  useEffect(() => {
     if (refHead && refBody && open) {
-      const parent = refHead.current!.parentElement;
-
+      // body открывается
       let curLeft = refHead.current!.offsetLeft;
       const top = refHead.current!.offsetTop;
       const width = refHead.current!.clientWidth;
       const bodyHeight = refBody.current!.scrollHeight;
       refBody.current!.style.left = `${curLeft + width}px`;
       refBody.current!.style.top = `${top + (width - bodyHeight) / 2}px`;
-      if (curLeft + width + 255 > parent!.clientWidth) {
-        curLeft = 20;
-        refHead.current!.style.left = "20px";
-        refBody.current!.style.left = `${curLeft + width}px`;
+
+      // если выходит за пределы контейнера
+      if (curLeft + width + 255 + 20 > parent!.clientWidth) {
+        if (parent!.clientWidth > 650) {
+          curLeft = 40;
+          refHead.current!.style.left = `${curLeft}%`;
+          refBody.current!.style.left = `${
+            curLeft + (refHead.current!.clientWidth / parent!.clientWidth) * 100
+          }%`;
+        } else {
+          curLeft = 20;
+          refHead.current!.style.left = "20px";
+          refBody.current!.style.left = `${curLeft + width}px`;
+        }
       }
     } else {
-      refHead.current!.style.left = `${left}px`;
-      refBody.current!.style.left = `${left + refHead.current!.clientWidth}px`;
+      // закрытие body
+      refHead.current!.style.left = `${left}%`;
+      refBody.current!.style.left = `${
+        left + (refHead.current!.clientWidth / parent!.clientWidth) * 100
+      }%`;
     }
   }, [open, refBody, refHead, left]);
 
