@@ -1,12 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import st from "./Subscribe.module.scss";
 import tg from "@/assets/footerIcons/telegram.svg";
 import MailIcon from "../UI/icons/MailIcon";
-import { useObserve } from "@/hooks/useObserve";
+import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 const Subscribe = () => {
   const [value, setValue] = useState("");
-  const ref = useRef(null);
-  const isVisible = useObserve(ref);
 
   const change = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
@@ -17,11 +15,10 @@ const Subscribe = () => {
   };
 
   return (
-    <section
-      ref={ref}
-      className={`bounding-container ${
-        isVisible ? "visibleToUp" : "notVisible"
-      }`}
+    <ObserverAnimation
+      className="bounding-container"
+      typeAnimation="down-to-up"
+      component="section"
     >
       <div className={`${st.subscribe}  `}>
         <h1 className={st.subscribe__head}>
@@ -40,7 +37,7 @@ const Subscribe = () => {
           </button>
         </form>
       </div>
-    </section>
+    </ObserverAnimation>
   );
 };
 

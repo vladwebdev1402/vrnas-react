@@ -1,9 +1,9 @@
-import React, { FC, useRef } from "react";
+import React, { FC } from "react";
 import st from "./VideoContainer.module.scss";
 import playBigImg from "../../../../assets/icons/playButtonBig.svg";
 import playSmallImg from "../../../../assets/icons/playButtonSmall.svg";
 import BgShadowButton from "../../button/BgShadowButton/BgShadowButton";
-import { useObserve } from "../../../../hooks/useObserve";
+import ObserverAnimation from "../../ObserverAnimation/ObserverAnimation";
 interface Props {
   gradient: string;
   title: string;
@@ -20,35 +20,15 @@ const VideoContainer: FC<Props> = ({
   videoTitle,
   nameMarker,
 }) => {
-  const gradientRef = useRef(null);
-  const titleRef = useRef(null);
-  const videoRef = useRef(null);
-  const gradientVis = useObserve(gradientRef);
-  const titleVis = useObserve(titleRef);
-  const videoVis = useObserve(videoRef);
-
   return (
     <section className={`${st.video} bounding-container`}>
-      <span
-        className={`gradient_txt ${gradientVis ? "visibleToUp" : "notVisible"}`}
-        ref={gradientRef}
-      >
-        {gradient}
-      </span>
-      <h1
-        ref={titleRef}
-        className={`${st.video__title} ${
-          titleVis ? "visibleToUp" : "notVisible"
-        }`}
-      >
-        {title}
-      </h1>
-      <div
-        ref={videoRef}
-        className={`${st.video__body} ${
-          videoVis ? "visibleToUp" : "notVisible"
-        }`}
-      >
+      <ObserverAnimation typeAnimation="down-to-up">
+        <span className={`gradient_txt`}>{gradient}</span>
+      </ObserverAnimation>
+      <ObserverAnimation className={st.video__title} typeAnimation="down-to-up">
+        <h1>{title}</h1>
+      </ObserverAnimation>
+      <ObserverAnimation className={st.video__body} typeAnimation="down-to-up">
         <img className={st.video__bg} src={img} alt="" />
         <img className={st.video__play_big} src={playBigImg} alt="" />
         <div className={st.video__options}>
@@ -68,8 +48,11 @@ const VideoContainer: FC<Props> = ({
           <div className={st.video__marcers__marcer}>{nameMarker}</div>
           <div className={st.video__marcers__title}>{videoTitle}</div>
         </div>
-      </div>
-      <BgShadowButton className={st.video__btn}>get started</BgShadowButton>
+      </ObserverAnimation>
+
+      <ObserverAnimation className={st.video__btn} typeAnimation="down-to-up">
+        <BgShadowButton>get started</BgShadowButton>
+      </ObserverAnimation>
     </section>
   );
 };

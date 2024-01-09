@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import st from "./HeadAbout.module.scss";
 import manvr from "../../assets/headAbout/manvr.png";
 import user1 from "../../assets/headAbout/users/user1.png";
@@ -7,11 +7,9 @@ import user3 from "../../assets/headAbout/users/user3.png";
 import videoIm from "../../assets/headAbout/video.png";
 import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
 import Advantages from "../Advantages/Advantages";
-import { useObserve } from "../../hooks/useObserve";
 import MiniVideoContainer from "../UI/Video/MiniVideoContainer/MiniVideoContainer";
+import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 const MainHeadAbout = () => {
-  const vrManRef = useRef(null);
-  const vrManVisible = useObserve(vrManRef);
   return (
     <section className={`${st.page_item}`}>
       <div className={`${st.headAbout_body} bounding-container`}>
@@ -40,14 +38,12 @@ const MainHeadAbout = () => {
             <MiniVideoContainer className={st.video} img={videoIm} />
           </div>
         </div>
-        <div
-          className={`${st.headAbout_body_img} ${
-            vrManVisible ? "visibleToLeft" : "notVisible"
-          }`}
-          ref={vrManRef}
+        <ObserverAnimation
+          className={st.headAbout_body_img}
+          typeAnimation="right-to-left"
         >
           <img src={manvr} alt="" />
-        </div>
+        </ObserverAnimation>
       </div>
       <div className={`bounding-container`}>
         <Advantages />

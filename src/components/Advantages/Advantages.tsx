@@ -1,23 +1,18 @@
-import React, { FC, useEffect, useRef } from "react";
+import React, { FC } from "react";
 import st from "./Advantages.module.scss";
 import icon1 from "../../assets/advantage/advantage1.svg";
 import icon2 from "../../assets/advantage/advantage2.svg";
 import icon3 from "../../assets/advantage/advantage3.svg";
 import AdvantagesItem from "./AdvantagesItem/AdvantagesItem";
-import { useObserve } from "../../hooks/useObserve";
+import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 interface Props {
   className?: string;
 }
-const Advantages: FC<Props> = ({ className }) => {
-  const ref = useRef(null);
-  const isVisible = useObserve(ref);
-
+const Advantages: FC<Props> = ({ className = "" }) => {
   return (
-    <div
-      className={`${st.advantagesContainer} ${
-        isVisible ? "visibleToUp" : "notVisible"
-      } ${className}`}
-      ref={ref}
+    <ObserverAnimation
+      className={`${className} ${st.advantagesContainer}`}
+      typeAnimation="down-to-up"
     >
       <AdvantagesItem
         img={icon1}
@@ -40,7 +35,7 @@ const Advantages: FC<Props> = ({ className }) => {
           "We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience"
         }
       />
-    </div>
+    </ObserverAnimation>
   );
 };
 

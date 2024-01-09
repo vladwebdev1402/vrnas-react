@@ -1,19 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import st from "./WhatOurClientSays.module.scss";
 import man from "../../assets/whatOurClientSays/man.png";
 import ImgCircleBg from "../UI/ImgCircleBg/ImgCircleBg";
 import RevieItem from "./ReviewItem/RevieItem";
-import { useObserve } from "../../hooks/useObserve";
+import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 const WhatOurClientSays = () => {
-  const ref = useRef(null);
-  const isVisible = useObserve(ref);
-
   return (
-    <section
-      className={`${st.reviews} ${
-        isVisible ? st.reviews_visible : "notVisible"
-      }`}
-      ref={ref}
+    <ObserverAnimation
+      className={st.reviews}
+      typeAnimation="big-to-small"
+      component="section"
     >
       <span className="gradient_txt">TESTIMONIAL</span>
       <h1 className={st.reviews__title}>What Our Clients Are Saying</h1>
@@ -58,7 +54,7 @@ const WhatOurClientSays = () => {
         name="Albert Socks"
         className={st.review_5}
       />
-    </section>
+    </ObserverAnimation>
   );
 };
 

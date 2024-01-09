@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState } from "react";
+import React, { FC } from "react";
 import st from "./OurServices.module.scss";
 import ServiceItem from "./ServiceItem/ServiceItem";
 import devIm from "../../assets/ourService/dev.svg";
@@ -7,17 +7,13 @@ import consIm from "../../assets/ourService/consulting.svg";
 import gameIm from "../../assets/ourService/games.svg";
 import eIm from "../../assets/ourService/events.svg";
 import enterIm from "../../assets/ourService/entertainment.svg";
-import { useObserve } from "../../hooks/useObserve";
+import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 const OurServices: FC = () => {
-  const headRef = useRef(null);
-  const headVisible = useObserve(headRef);
   return (
     <section className={`${st.pageItem} bounding-container`}>
-      <div
-        className={`${st.service_head} ${
-          headVisible ? st.service_head_visible : ""
-        }`}
-        ref={headRef}
+      <ObserverAnimation
+        className={`${st.service_head}`}
+        typeAnimation="down-to-up"
       >
         <div className={st.service_head_txt}>
           <span className={`gradient_txt`}>OUR SERVICE</span>
@@ -30,7 +26,7 @@ const OurServices: FC = () => {
           available to answer any questions and address any concerns you may
           have.
         </div>
-      </div>
+      </ObserverAnimation>
 
       <div className={st.service_body}>
         <ServiceItem

@@ -1,4 +1,4 @@
-import React, { FC, useRef } from "react";
+import React, { FC } from "react";
 import st from "./Footer.module.scss";
 import logo from "../../assets/logo.svg";
 import twitterIm from "../../assets/footerIcons/twitter.svg";
@@ -10,18 +10,14 @@ import MapIcon from "../UI/icons/MapIcon";
 import MailIcon from "../UI/icons/MailIcon";
 import PhoneIcon from "../UI/icons/PhoneIcon";
 import LinskList from "./LinskList";
-import { useObserve } from "../../hooks/useObserve";
+import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 
 const Footer: FC = () => {
-  const wrapperRef = useRef(null);
-  const isVisible = useObserve(wrapperRef);
   return (
     <footer className={`${st.footer}`}>
-      <div
-        className={`${st.footer__wrapper} bounding-container ${
-          isVisible ? "visibleToUp" : "notVisible"
-        }`}
-        ref={wrapperRef}
+      <ObserverAnimation
+        className={`bounding-container ${st.footer__wrapper}`}
+        typeAnimation="down-to-up"
       >
         <div className={`${st.footer__body}`}>
           <div className={st.footer__contacts}>
@@ -125,7 +121,7 @@ const Footer: FC = () => {
         <div className={st.footer__copyright}>
           © Copyright 2023, All Rights Reserved
         </div>
-      </div>
+      </ObserverAnimation>
 
       <img className={st.footer__angle} src={angleBg} alt="" />
     </footer>

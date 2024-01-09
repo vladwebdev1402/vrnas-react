@@ -1,0 +1,29 @@
+.discover {
+    margin: 230px auto 0 auto;
+    max-width: 1050px;
+}
+
+.discover__head {
+    text-align: center;
+}
+
+.discover__heading {
+    margin-top: 12px;
+}
+
+.discover__body {
+    margin-top: 60px;
+    position: relative;
+    background-image: url(../../assets/discover/lines.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 539px;
+}
+
+.discover__img {
+    bottom: -202px;
+    width: 707px;
+    height: 555px;
+}
+
