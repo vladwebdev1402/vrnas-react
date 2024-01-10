@@ -1,0 +1,33 @@
+.numbers {
+    background: radial-gradient(50% 50% at 50% 50%, #343445 0%, rgba(32, 32, 41, 0) 100%);
+    margin: 200px auto;
+    padding: 60px 0px;
+}
+
+.numbers__body {
+    display: flex;
+    max-width: 913px;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.numbers__block {
+    text-align: center;
+}
+
+.numbers__number {
+    margin-top: 12px;
+}
+
+
+@media (max-width: 992px) {
+    .numbers {
+        margin: 100px auto;
+        background: radial-gradient(50% 50% at 50% 50%, #343445 0%, rgba(32, 32, 41, 0) 100%);
+    }
+
+    .numbers__body {
+        align-items: center;
+        flex-direction: column;
+    }
+}
