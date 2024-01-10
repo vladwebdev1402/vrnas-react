@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import st from "./Subscribe.module.scss";
-import tg from "@/assets/footerIcons/telegram.svg";
+import tg from "@/assets/socialIcons/telegram.svg";
 import MailIcon from "../UI/icons/MailIcon";
 import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 const Subscribe = () => {
