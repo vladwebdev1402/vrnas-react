@@ -69,7 +69,7 @@ const Header: FC = () => {
         <nav>
           <ul className={st.burger__nav}>
             <li className={`link`} onClick={closeBurger}>
-              <Link to={routerPaths.about}>Home</Link>
+              <Link to={routerPaths.main}>Home</Link>
             </li>
             <li className={`link`} onClick={closeBurger}>
               <Link to={routerPaths.about}>About us</Link>

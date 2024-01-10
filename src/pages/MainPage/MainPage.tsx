@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import MainHeadAbout from "../../components/MainHeadAbout/MainHeadAbout";
 import MainAboutUs from "../../components/MainAboutUs/MainAboutUs";
 import OurServices from "../../components/OurServices/OurServices";
@@ -10,6 +10,10 @@ import Subscribe from "@/components/Subscribe/Subscribe";
 import OurArticles from "@/components/OurArticles/OurArticles";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 const MainPage: FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <>
       <MainHeadAbout />

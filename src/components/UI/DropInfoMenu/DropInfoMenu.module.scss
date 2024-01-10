@@ -2,6 +2,7 @@
     text-align: left;
     display: flex;
     justify-content: space-between;
+    gap: 15px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     padding-bottom: 12px;
@@ -81,8 +82,12 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 568px) {
     .menu__title {
         font-size: 18px; 
+     }
+
+     .menu_withBackground {
+        padding: 24px 14px;
      }
 }

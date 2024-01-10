@@ -14,7 +14,11 @@ const OurTeam = () => {
         </div>
         <BgBlackButton className={st.team__all_desktop}>see all</BgBlackButton>
       </ObserverAnimation>
-      <ObserverAnimation typeAnimation="small-to-big" className={st.team__body}>
+      <ObserverAnimation
+        threshold={0.1}
+        typeAnimation="small-to-big"
+        className={st.team__body}
+      >
         <TeamContainer className={st.team__employees} employees={team} />
       </ObserverAnimation>
       <BgBlackButton className={st.team__all_mobile}>see all</BgBlackButton>

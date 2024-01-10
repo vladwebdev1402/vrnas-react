@@ -5,10 +5,6 @@ interface Props {
   children: React.ReactNode;
 }
 const PageWrapper: FC<Props> = ({ children }) => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
-
   return (
     <div className={st.page}>
       <img className={st.bgAngle} src={bgAngle} alt="" />
