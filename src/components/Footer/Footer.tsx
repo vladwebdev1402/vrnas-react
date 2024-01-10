@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import st from "./Footer.module.scss";
 import logo from "../../assets/logo.svg";
-import twitterIm from "../../assets/footerIcons/twitter.svg";
-import facebookIm from "../../assets/footerIcons/facebook.svg";
-import instIm from "../../assets/footerIcons/inst.svg";
-import gitIm from "../../assets/footerIcons/git.svg";
+import twitterIm from "../../assets/socialIcons//twitter.svg";
+import facebookIm from "../../assets/socialIcons/facebook.svg";
+import instIm from "../../assets/socialIcons/inst.svg";
+import gitIm from "../../assets/socialIcons/git.svg";
 import angleBg from "../../assets/footerBgAngle.svg";
 import MapIcon from "../UI/icons/MapIcon";
 import MailIcon from "../UI/icons/MailIcon";

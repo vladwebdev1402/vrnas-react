@@ -1,0 +1,13 @@
+.btn {
+  text-transform: uppercase;
+  background-color: var(--black-50);
+  color: var(--white-50);
+  font-weight: 500;
+  white-space: nowrap;
+
+  @media (min-width: 992px) {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

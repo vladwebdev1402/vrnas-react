@@ -21,8 +21,12 @@
     animation: visibleToRightAnim .8s ease-in-out;
   }
 
-  .visibleScale {
-    animation: visibleScale .8s ease-in-out;
+  .visibleToSmallScale {
+    animation: visibleToSmallScaleAnim .8s ease-in-out;
+  }
+
+  .visibleToBigScale {
+    animation: visibleToBigScaleAnim .8s ease-in-out;
   }
   
   @keyframes visibleToUpAnim {
@@ -59,7 +63,7 @@
     }
 }
 
-@keyframes visibleScale {
+@keyframes visibleToSmallScaleAnim {
   0% {
       opacity: 0;
       transform: scale(1.2);
@@ -68,5 +72,16 @@
       opacity: 1;
       transform: scale(1);
   }
-  
 }
+
+@keyframes visibleToBigScaleAnim {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+

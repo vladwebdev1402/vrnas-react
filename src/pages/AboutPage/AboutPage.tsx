@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AboutUs from "./components/AboutUs/AboutUs";
 import WhyChooseUsAdvantages from "./components/WhyChooseUsAdvantages/WhyChooseUsAdvantages";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
+import OurTeam from "./components/OurTeam/OurTeam";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const AboutPage = () => {
       <AboutUs />
       <WhyChooseUsAdvantages />
       <WhyChooseUs />
+      <OurTeam />
     </>
   );
 };

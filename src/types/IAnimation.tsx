@@ -4,4 +4,5 @@ export type IAnimation =
   | "down-to-up"
   | "left-to-right"
   | "right-to-left"
-  | "big-to-small";
+  | "big-to-small"
+  | "small-to-big";

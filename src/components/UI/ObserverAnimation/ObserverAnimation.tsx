@@ -7,7 +7,8 @@ enum classesAnimations {
   "down-to-up" = "visibleToUp",
   "left-to-right" = "visibleToRight",
   "right-to-left" = "visibleToLeft",
-  "big-to-small" = "visibleScale",
+  "big-to-small" = "visibleToSmallScale",
+  "small-to-big" = "visibleToBigScale",
   "none" = "visibleScale",
 }
 

@@ -1,0 +1,25 @@
+.employees {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .employees {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .employees {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 568px) {
+    .employees {
+        grid-template-columns: minmax(270px, 370px);
+
+    }
+}
