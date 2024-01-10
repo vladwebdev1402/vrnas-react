@@ -5,6 +5,7 @@ import BorderButton from "../UI/button/BorderButton/BorderButton";
 import BurgerButton from "../UI/button/BurgerButton/BurgerButton";
 import { Link } from "react-router-dom";
 import { routerPaths } from "../Router";
+import { navPaths } from "../Router/routerPaths";
 const Header: FC = () => {
   const [topScroll, setTopScroll] = useState(0);
   const [openBurger, setOpenBurger] = useState(false);
@@ -38,21 +39,11 @@ const Header: FC = () => {
         </Link>
         <nav>
           <ul className={st.header__menu}>
-            <li className={`link`}>
-              <Link to={routerPaths.main}>Home</Link>
-            </li>
-            <li className={`link`}>
-              <Link to={routerPaths.about}>About us</Link>
-            </li>
-            <li className={`link`}>
-              <a href="#">Service</a>
-            </li>
-            <li className={`link`}>
-              <a href="#">Page</a>
-            </li>
-            <li className={`link`}>
-              <a href="#">Blog</a>
-            </li>
+            {navPaths.map((link) => (
+              <li className={`link`} key={link.to}>
+                <Link to={link.to}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className={st.header__options}>
@@ -68,21 +59,11 @@ const Header: FC = () => {
       <div className={`${st.header__burger}`}>
         <nav>
           <ul className={st.burger__nav}>
-            <li className={`link`} onClick={closeBurger}>
-              <Link to={routerPaths.main}>Home</Link>
-            </li>
-            <li className={`link`} onClick={closeBurger}>
-              <Link to={routerPaths.about}>About us</Link>
-            </li>
-            <li className={`link`} onClick={closeBurger}>
-              <a href="#">Service</a>
-            </li>
-            <li className={`link`} onClick={closeBurger}>
-              <a href="#">Page</a>
-            </li>
-            <li className={`link`} onClick={closeBurger}>
-              <a href="#">Blog</a>
-            </li>
+            {navPaths.map((link) => (
+              <li className={`link`} key={link.to} onClick={closeBurger}>
+                <Link to={link.to}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
           <BorderButton className={st.burger_contact_btn}>
             Contact Us
