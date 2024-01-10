@@ -1,4 +1,3 @@
-import MainPage from "@/pages/MainPage/MainPage";
 import React from "react";
 import {
   Route,
@@ -8,7 +7,8 @@ import {
 } from "react-router-dom";
 import { routerPaths } from "./routerPaths";
 import Root from "./Root";
-import AboutPage from "@/pages/AboutPage/AboutPage";
+import { AboutPage } from "@/pages/AboutPage";
+import { MainPage } from "@/pages/MainPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={routerPaths.main} element={<Root />}>

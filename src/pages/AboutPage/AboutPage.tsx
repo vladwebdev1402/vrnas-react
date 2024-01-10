@@ -2,6 +2,7 @@ import PageTitle from "@/components/PageTitle/PageTitle";
 import React, { useEffect } from "react";
 import AboutUs from "./components/AboutUs/AboutUs";
 import WhyChooseUsAdvantages from "./components/WhyChooseUsAdvantages/WhyChooseUsAdvantages";
+import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const AboutPage = () => {
       <PageTitle />
       <AboutUs />
       <WhyChooseUsAdvantages />
+      <WhyChooseUs />
     </>
   );
 };

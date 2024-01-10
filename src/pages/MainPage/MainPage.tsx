@@ -2,13 +2,13 @@ import React, { FC } from "react";
 import MainHeadAbout from "../../components/MainHeadAbout/MainHeadAbout";
 import MainAboutUs from "../../components/MainAboutUs/MainAboutUs";
 import OurServices from "../../components/OurServices/OurServices";
-import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import videoImg from "../../assets/videoBgImages/mainPageVideoBg.png";
 import VideoContainer from "../../components/UI/Video/VideoContainer/VideoContainer";
 import WhatOurClientSays from "../../components/WhatOurClientSays/WhatOurClientSays";
 import AffrodableServices from "../../components/AffrodableServices/AffrodableServices";
 import Subscribe from "@/components/Subscribe/Subscribe";
 import OurArticles from "@/components/OurArticles/OurArticles";
+import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 const MainPage: FC = () => {
   return (
     <>
