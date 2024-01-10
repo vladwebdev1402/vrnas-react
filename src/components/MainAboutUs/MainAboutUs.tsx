@@ -3,14 +3,13 @@ import st from "./MainAboutUs.module.scss";
 import BgShadowButton from "../UI/button/BgShadowButton/BgShadowButton";
 import vrGlases from "../../assets/mainAboutUs/vr_glasses.png";
 import man from "../../assets/mainAboutUs/man.png";
-import { useObserve } from "../../hooks/useObserve";
 import ImgBgVideoBlock from "../UI/ImgBgVideoBlock/ImgBgVideoBlock";
 import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
 const MainAboutUs = () => {
   return (
     <section className={`bounding-container ${st.container} `}>
       <ImgBgVideoBlock
-        visibleClassName={"visibleToRight"}
+        visibleClassName={"left-to-right"}
         className={st.imgContainer}
         videoClassName={st.video}
         manImg={man}

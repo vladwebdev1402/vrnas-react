@@ -43,7 +43,7 @@ const WhyChooseUs: FC<Props> = ({}) => {
           <ImgBgVideoBlock
             className={st.choose__img_man}
             videoClassName={st.choose__img_video}
-            visibleClassName="visibleToLeft"
+            visibleClassName="right-to-left"
             manImg={manImg}
             videoImg={videoImg}
           />

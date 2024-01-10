@@ -1,4 +1,5 @@
 import { useObserve } from "@/hooks/useObserve";
+import { IAnimation } from "@/types/IAnimation";
 import React, { FC, useRef } from "react";
 
 enum classesAnimations {
@@ -7,15 +8,11 @@ enum classesAnimations {
   "left-to-right" = "visibleToRight",
   "right-to-left" = "visibleToLeft",
   "big-to-small" = "visibleScale",
+  "none" = "visibleScale",
 }
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  typeAnimation:
-    | "up-to-down"
-    | "down-to-up"
-    | "left-to-right"
-    | "right-to-left"
-    | "big-to-small";
+  typeAnimation: IAnimation;
   threshold?: number;
   component?: "section" | "div";
 }

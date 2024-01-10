@@ -1,36 +1,33 @@
-import React, { FC, RefObject, useRef } from "react";
+import React, { FC, useRef } from "react";
 import st from "./ImgBgVideoBlock.module.scss";
 import MiniVideoContainer from "../Video/MiniVideoContainer/MiniVideoContainer";
-import { useObserve } from "../../../hooks/useObserve";
+import ObserverAnimation from "../ObserverAnimation/ObserverAnimation";
+import { IAnimation } from "@/types/IAnimation";
 interface Props {
   manImg: string;
   videoImg: string;
   className?: string;
   videoClassName?: string;
-  visibleClassName?: string;
+  visibleClassName?: IAnimation;
 }
 const ImgBgVideoBlock: FC<Props> = ({
   manImg,
   videoImg,
   className = "",
   videoClassName = "",
-  visibleClassName = "",
+  visibleClassName = "none",
 }) => {
-  const imgRef = useRef(null);
-  const visibleImg = useObserve(imgRef);
   return (
-    <div
-      className={`${st.imgContainer} ${className} ${
-        visibleImg ? visibleClassName : "notVisible"
-      }`}
-      ref={imgRef}
+    <ObserverAnimation
+      typeAnimation={visibleClassName}
+      className={`${st.imgContainer} ${className}`}
     >
       <img className={st.manImg} src={manImg} alt="" />
       <MiniVideoContainer
         className={`${st.video} ${videoClassName}`}
         img={videoImg}
       />
-    </div>
+    </ObserverAnimation>
   );
 };
 

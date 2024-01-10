@@ -38,45 +38,6 @@
     margin-top: 32px;
 }
 
-.notVisible {
-    opacity: 0;
-}
-
-.visibleUp, .visibleImg {
-    opacity: 1;
-}
-
-.visibleUp {
-    animation: visibleUpAnim .8s ease-in-out;
-}
-
-.visibleImg {
-    animation: visibleImgAnim .8s ease-in-out;
-}
-
-@keyframes visibleUpAnim {
-    0% {
-        opacity: 0;
-        transform: translateY(200px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
-    
-}
-
-@keyframes visibleImgAnim {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
-    
-}
 
 @media (max-width: 920px) {
     .container {
