@@ -1,0 +1,25 @@
+.choose {
+    margin-top: 150px;
+    background-repeat: no-repeat;
+    background-image: url(../../../../assets/lines/lines.svg);
+    background-position: left center;
+}
+
+.choose__gradint {
+    text-align: center;
+}
+
+.choose__title {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.choose__advantages {
+    margin-top: 55px;
+}
+
+@media (max-width: 992px) {
+    .choose  {
+        margin-top: 100px;
+    }
+}
