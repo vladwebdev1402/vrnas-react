@@ -5,8 +5,13 @@ import { useAnimateHeight } from "../../../hooks/useAnimateHeihgt";
 interface Props {
   title: string;
   description: string;
+  withBackground?: boolean;
 }
-const DropInfoMenu: FC<Props> = ({ title, description }) => {
+const DropInfoMenu: FC<Props> = ({
+  title,
+  description,
+  withBackground = false,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const clickMenu = () => {
@@ -16,7 +21,11 @@ const DropInfoMenu: FC<Props> = ({ title, description }) => {
   useAnimateHeight(ref, isOpen);
 
   return (
-    <div className={`menu ${isOpen ? st.menu_open : ""}`}>
+    <div
+      className={`${withBackground ? st.menu_withBackground : ""} ${
+        isOpen ? st.menu_open : ""
+      }`}
+    >
       <button className={st.menu__head} onClick={clickMenu}>
         <div className={st.menu__title}>{title}</div>
         <div className={st.menu__title__icon}>

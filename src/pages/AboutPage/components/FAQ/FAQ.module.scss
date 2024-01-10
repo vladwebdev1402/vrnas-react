@@ -1,0 +1,36 @@
+.faq {
+    margin-top: 150px;
+}
+
+.faq__header {
+    text-align: center;
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.faq__title {
+    margin-top: 12px;
+}
+
+.faq__subtitle {
+    margin-top: 24px;
+}
+
+.faq__list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 992px) {
+    .faq {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq__list {
+        margin-top: 24px;
+    }
+}

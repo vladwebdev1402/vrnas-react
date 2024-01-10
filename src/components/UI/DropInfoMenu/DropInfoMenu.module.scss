@@ -6,6 +6,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     padding-bottom: 12px;
     width: 100%;
+    transition: .5s;
 }
 
 .menu__title__icon {
@@ -18,12 +19,13 @@
     justify-content: center;
     img {
         position: absolute;
-       transition: .3s ease-in;
+       transition: .5s ease-in;
     }
 }
 
 .menu__title {
    font-size: 20px; 
+   transition: .5s ease-in;
 }
 
 .menu_open {
@@ -32,7 +34,15 @@
     }
 
     .menu__title {
-        font-weight: 500;
+        text-shadow:
+    -0.1px -0.1px 0 white,
+    0.1px -0.1px 0 white,
+    -0.1px 0.1px 0 white,
+    0.1px 0.1px 0 white;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
     }
 }
 
@@ -40,11 +50,36 @@
 .menu__description {
     margin-top: 12px;
     color: var(--gray-2);
-    transition: height .5s ease-in;
+    transition: margin-top, height .5s ease-in;
     font-size: 16px;
     line-height: 28px;
     overflow: hidden;
 }
+
+.menu_withBackground {
+    padding: 24px;
+    background-color: var(--black-50);
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: var(--gray-linear);
+    transition: .5s ease-in;
+}
+
+.menu_withBackground:not(.menu_open) {
+    .menu__head  {
+        padding-bottom: 0px;
+        border-bottom: 1px solid transparent;
+    }
+
+    .menu__description  {
+        margin-top: 0px;
+    }
+}
+
+.menu_withBackground.menu_open {
+    border-image-source: var(--linear-border);
+}
+
 
 @media (max-width: 400px) {
     .menu__title {

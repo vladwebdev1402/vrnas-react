@@ -1,87 +1,101 @@
 .notVisible {
-    opacity: 0;
-    // transform: translateY(50px)
-
+  opacity: 0;
+  // transform: translateY(50px)
 }
 
-.visibleToUp, .visibleToLeft, .visibleToRihgt {
-    transition: opacity .8s ease-in-out;
-    // opacity: 1;
-  }
-  
-  .visibleToUp {
-    animation: visibleToUpAnim .8s ease-in-out;
-  }
-  
-  .visibleToLeft {
-    animation: visibleToLeftAnim .8s ease-in-out;
-  }
+.visibleToUp,
+.visibleToLeft,
+.visibleToRihgt {
+  transition: opacity 0.8s ease-in-out;
+  // opacity: 1;
+}
 
-  .visibleToRight {
-    animation: visibleToRightAnim .8s ease-in-out;
-  }
+.visibleToUp {
+  animation: visibleToUpAnim 0.8s ease-in-out;
+}
 
-  .visibleToSmallScale {
-    animation: visibleToSmallScaleAnim .8s ease-in-out;
-  }
+.visibleToLeft {
+  animation: visibleToLeftAnim 0.8s ease-in-out;
+}
 
-  .visibleToBigScale {
-    animation: visibleToBigScaleAnim .8s ease-in-out;
+.visibleToRight {
+  animation: visibleToRightAnim 0.8s ease-in-out;
+}
+
+.visibleToSmallScale {
+  animation: visibleToSmallScaleAnim 0.8s ease-in-out;
+}
+
+.visibleToBigScale {
+  animation: visibleToBigScaleAnim 0.8s ease-in-out;
+}
+
+.visibleToDown {
+  animation: visibleToDownAnim 0.8s ease-in-out;
+}
+
+@keyframes visibleToUpAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
   }
-  
-  @keyframes visibleToUpAnim {
-    0% {
-        opacity: 0;
-        transform: translateY(200px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
-    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@keyframes visibleToDownAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes visibleToRightAnim {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes visibleToLeftAnim {
-    0% {
-        opacity: 0;
-        transform: translateX(200px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes visibleToSmallScaleAnim {
   0% {
-      opacity: 0;
-      transform: scale(1.2);
+    opacity: 0;
+    transform: scale(1.2);
   }
   100% {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
 @keyframes visibleToBigScaleAnim {
   0% {
-      opacity: 0;
-      transform: scale(0.8);
+    opacity: 0;
+    transform: scale(0.8);
   }
   100% {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
-
