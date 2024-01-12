@@ -11,8 +11,8 @@ import MailIcon from "../UI/icons/MailIcon";
 import PhoneIcon from "../UI/icons/PhoneIcon";
 import LinskList from "./LinskList";
 import ObserverAnimation from "../UI/ObserverAnimation/ObserverAnimation";
-import { Link } from "react-router-dom";
 import { routerPaths } from "../Router";
+import Link from "../UI/Link/Link";
 
 const Footer: FC = () => {
   return (
@@ -51,12 +51,8 @@ const Footer: FC = () => {
                 st_ul={st.footer__links__list}
                 st_li={st.footer__links__item}
               >
-                <Link className={`link`} to={routerPaths.main}>
-                  Home
-                </Link>
-                <a className={`link`} href="#">
-                  Pricing Plan
-                </a>
+                <Link to={routerPaths.main}>Home</Link>
+                <Link to={routerPaths.pricingPlan}>Pricing Plan</Link>
                 <a className={`link`} href="#">
                   Service
                 </a>
@@ -74,9 +70,7 @@ const Footer: FC = () => {
                 st_ul={st.footer__links__list}
                 st_li={st.footer__links__item}
               >
-                <Link className={`link`} to={routerPaths.about}>
-                  About us
-                </Link>
+                <Link to={routerPaths.about}>About us</Link>
                 <a className={`link`} href="#">
                   Contact us
                 </a>

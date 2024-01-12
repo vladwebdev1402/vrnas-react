@@ -4,8 +4,8 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import WhyChooseUsAdvantages from "./components/WhyChooseUsAdvantages/WhyChooseUsAdvantages";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import OurTeam from "./components/OurTeam/OurTeam";
-import FAQ from "./components/FAQ/FAQ";
 import Subscribe from "@/components/Subscribe/Subscribe";
+import ShortFAQ from "@/components/ShortFAQ/ShortFAQ";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const AboutPage = () => {
       <WhyChooseUsAdvantages />
       <WhyChooseUs />
       <OurTeam />
-      <FAQ />
+      <ShortFAQ />
       <Subscribe />
     </>
   );

@@ -1,9 +1,14 @@
 import React from "react";
 import st from "./Numbers.module.scss";
 import AnimationNumber from "./AnimationNumber";
+import ObserverAnimation from "@/components/UI/ObserverAnimation/ObserverAnimation";
 const Numbers = () => {
   return (
-    <section className={`${st.numbers}`}>
+    <ObserverAnimation
+      typeAnimation="big-to-small"
+      component="section"
+      className={`${st.numbers}`}
+    >
       <div className={`bounding-container  ${st.numbers__body}`}>
         <div className={st.numbers__block}>
           <span className={`gradient_txt`}>HAPPY CLIENTS</span>
@@ -24,7 +29,7 @@ const Numbers = () => {
           </AnimationNumber>
         </div>
       </div>
-    </section>
+    </ObserverAnimation>
   );
 };
 

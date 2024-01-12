@@ -1,8 +1,8 @@
 import React from "react";
-import st from "./FAQ.module.scss";
+import st from "./ShortFAQ.module.scss";
 import ObserverAnimation from "@/components/UI/ObserverAnimation/ObserverAnimation";
 import DropInfoMenu from "@/components/UI/DropInfoMenu/DropInfoMenu";
-const FAQ = () => {
+const ShortFAQ = () => {
   return (
     <section className={`bounding-container ${st.faq}`}>
       <div className={st.faq__header}>
@@ -61,4 +61,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default ShortFAQ;

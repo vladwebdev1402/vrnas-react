@@ -3,9 +3,9 @@ import st from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import BorderButton from "../UI/button/BorderButton/BorderButton";
 import BurgerButton from "../UI/button/BurgerButton/BurgerButton";
-import { Link } from "react-router-dom";
 import { routerPaths } from "../Router";
 import { navPaths } from "../Router/routerPaths";
+import Link from "../UI/Link/Link";
 const Header: FC = () => {
   const [topScroll, setTopScroll] = useState(0);
   const [openBurger, setOpenBurger] = useState(false);
@@ -39,8 +39,8 @@ const Header: FC = () => {
         </Link>
         <nav>
           <ul className={st.header__menu}>
-            {navPaths.map((link) => (
-              <li className={`link`} key={link.to}>
+            {navPaths.map((link, idx) => (
+              <li className={`link`} key={idx}>
                 <Link to={link.to}>{link.name}</Link>
               </li>
             ))}
@@ -59,8 +59,8 @@ const Header: FC = () => {
       <div className={`${st.header__burger}`}>
         <nav>
           <ul className={st.burger__nav}>
-            {navPaths.map((link) => (
-              <li className={`link`} key={link.to} onClick={closeBurger}>
+            {navPaths.map((link, idx) => (
+              <li className={`link`} key={idx} onClick={closeBurger}>
                 <Link to={link.to}>{link.name}</Link>
               </li>
             ))}
