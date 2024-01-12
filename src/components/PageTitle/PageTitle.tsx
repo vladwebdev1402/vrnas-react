@@ -12,21 +12,22 @@ const PageTitle = () => {
     [location]
   );
   return (
-    <ObserverAnimation
-      component="section"
-      typeAnimation="big-to-small"
-      className={`bounding-container ${st.title}`}
-    >
-      <div className={st.title__body}>
+    <div className={`bounding-container ${st.title}`}>
+      <ObserverAnimation
+        className={st.title__body}
+        component="section"
+        typeAnimation="small-to-big"
+      >
         <h1 className={st.title__header}>
           {translatePath[spliceLocation.at(-1) || ""]}
         </h1>
 
         <Breadcrumbs className={st.title__breadcrumbs} />
         <img src={shadow} className={st.title__shadow} alt="" />
-      </div>
+      </ObserverAnimation>
+
       <div className={st.title__divider}></div>
-    </ObserverAnimation>
+    </div>
   );
 };
 
