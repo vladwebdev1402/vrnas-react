@@ -12,7 +12,8 @@ export const routerPaths = {
 export const translatePath: {[key: string] : string} = {
     "vrnas-react": "Home",
     "about": "About Us",
-    "services": "Our Service"
+    "services": "Our Service",
+    "pricing": "Pricing Plan"
 }
 // FAQ
 // Tems & Conditions

@@ -10,7 +10,7 @@ import Root from "./Root";
 import { AboutPage } from "@/pages/AboutPage";
 import { MainPage } from "@/pages/MainPage";
 import { OurServicePage } from "@/pages/OurServicePage";
-import PricingPlanPage from "@/pages/PricingPlanPage/PricingPlanPage";
+import { PricingPlanPage } from "@/pages/PricingPlanPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={routerPaths.main} element={<Root />}>

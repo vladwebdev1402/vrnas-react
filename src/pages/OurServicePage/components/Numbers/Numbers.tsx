@@ -1,7 +1,7 @@
 import React from "react";
 import st from "./Numbers.module.scss";
-import AnimationNumber from "./AnimationNumber";
 import ObserverAnimation from "@/components/UI/ObserverAnimation/ObserverAnimation";
+import AnimationNumber from "@/components/UI/AnimationNumber/AnimationNumber";
 const Numbers = () => {
   return (
     <ObserverAnimation
@@ -12,19 +12,31 @@ const Numbers = () => {
       <div className={`bounding-container  ${st.numbers__body}`}>
         <div className={st.numbers__block}>
           <span className={`gradient_txt`}>HAPPY CLIENTS</span>
-          <AnimationNumber className={st.numbers__number} num={123}>
+          <AnimationNumber
+            component="h1"
+            className={st.numbers__number}
+            num={123}
+          >
             k+
           </AnimationNumber>
         </div>
         <div className={st.numbers__block}>
           <span className={`gradient_txt`}>PROJECT COMPLETE</span>
-          <AnimationNumber className={st.numbers__number} num={300}>
+          <AnimationNumber
+            component="h1"
+            className={st.numbers__number}
+            num={300}
+          >
             k+
           </AnimationNumber>
         </div>
         <div className={st.numbers__block}>
           <span className={`gradient_txt`}>YEARS EXPERIENCE</span>
-          <AnimationNumber className={st.numbers__number} num={10}>
+          <AnimationNumber
+            component="h1"
+            className={st.numbers__number}
+            num={10}
+          >
             +
           </AnimationNumber>
         </div>
