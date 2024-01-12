@@ -89,6 +89,13 @@
   display: none;
 }
 
+.header__burger__link {
+  a {
+    display: block;
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 992px) {
   .header__menu {

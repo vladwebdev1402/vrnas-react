@@ -10,7 +10,6 @@ interface Props {
 const Link: FC<Props> = ({ to, children }) => {
   const match = useMatch(to);
 
-  console.log(match);
   return (
     <NavLink to={to} className={`${match ? st.link__active : ""}`}>
       {children}
