@@ -1,0 +1,44 @@
+.man__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.man__right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotateY(180deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+
+@media (max-width: 1130px) {
+  .man__left,
+  .man__right {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .man__left,
+  .man__right {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .man__left,
+  .man__right {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 568px) {
+  .man__left,
+  .man__right {
+    max-width: 60px;
+  }
+}

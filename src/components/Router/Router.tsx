@@ -12,6 +12,7 @@ import { MainPage } from "@/pages/MainPage";
 import { OurServicePage } from "@/pages/OurServicePage";
 import { PricingPlanPage } from "@/pages/PricingPlanPage";
 import { OurTeamPage } from "@/pages/OurTeamPage";
+import { FAQPage } from "@/pages/FAQPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={routerPaths.main} element={<Root />}>
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path={routerPaths.about} element={<AboutPage />}></Route>
       <Route path={routerPaths.ourService} element={<OurServicePage />}></Route>
       <Route path={routerPaths.ourTeam} element={<OurTeamPage />}></Route>
+      <Route path={routerPaths.faq} element={<FAQPage />}></Route>
       <Route
         path={routerPaths.pricingPlan}
         element={<PricingPlanPage />}

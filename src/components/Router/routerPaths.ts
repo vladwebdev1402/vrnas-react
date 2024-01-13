@@ -43,7 +43,7 @@ export const navPaths: IPath[] = [
             },
             {
                 name: "FAQ",
-                to: ""
+                to: routerPaths.faq,
             },
             {
                 name: "Tems & Conditions",

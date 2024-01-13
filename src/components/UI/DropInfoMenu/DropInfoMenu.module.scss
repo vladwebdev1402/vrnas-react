@@ -1,3 +1,4 @@
+$transition: 0.3s;
 .menu__head {
     text-align: left;
     display: flex;
@@ -7,7 +8,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     padding-bottom: 12px;
     width: 100%;
-    transition: .5s;
+    transition: $transition;
 }
 
 .menu__title__icon {
@@ -20,13 +21,13 @@
     justify-content: center;
     img {
         position: absolute;
-       transition: .5s ease-in;
+       transition: $transition ease-in;
     }
 }
 
 .menu__title {
    font-size: 20px; 
-   transition: .5s ease-in;
+   transition: $transition ease-in;
 }
 
 .menu_open {
@@ -40,10 +41,10 @@
     0.1px -0.1px 0 white,
     -0.1px 0.1px 0 white,
     0.1px 0.1px 0 white;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all $transition;
+    -moz-transition: all $transition;
+    -o-transition: all $transition;
+    transition: all $transition;
     }
 }
 
@@ -51,7 +52,7 @@
 .menu__description {
     margin-top: 12px;
     color: var(--gray-2);
-    transition: margin-top, height .5s ease-in;
+    transition: all $transition ease-in;
     font-size: 16px;
     line-height: 28px;
     overflow: hidden;
@@ -63,7 +64,7 @@
     border: 1px solid;
     border-image-slice: 1;
     border-image-source: var(--gray-linear);
-    transition: .5s ease-in;
+    transition: $transition ease-in;
 }
 
 .menu_withBackground:not(.menu_open) {

@@ -1,0 +1,41 @@
+.faq {
+    margin: 32px auto 0 auto;
+    max-width: 810px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.faq_enter {
+    animation: EnterAnimation 200;
+}
+
+.faq_exit {
+    animation: ExitAnimation 200;
+}
+
+@keyframes EnterAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes ExitAnimation {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+}
+

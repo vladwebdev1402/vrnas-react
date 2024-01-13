@@ -49,6 +49,8 @@
 
 .employee__img {
   width: 100%;
+  min-height: 200px;
+
 }
 
 .employee__social {
@@ -79,7 +81,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s;
-    min-height: 200px;
   }
 
   &:hover {
