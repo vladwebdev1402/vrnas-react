@@ -28,3 +28,21 @@
   font-weight: 700;
   src: url("../assets/fonts/ChakraPetch-Bold.ttf");
 }
+
+.heading-8 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.body-1 {
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--gray-2);
+  ul {
+      padding-left: 20px
+  }
+  li {
+    list-style: disc;  
+  }
+}

@@ -15,25 +15,27 @@ const Tems = () => {
             before using our website and services.
           </div>
         </ObserverAnimation>
-        <ObserverAnimation
-          className={st.tems__body}
-          typeAnimation="small-to-big"
-          threshold={0.2}
-        >
-          <div className={st.tems__condition}>
-            <div className={st.tems__titleCondition}>Acceptance of Term</div>
-            <div className={st.tems__descriptionCondition}>
+        <div className={st.tems__body}>
+          <ObserverAnimation
+            typeAnimation="left-to-right"
+            className={st.tems__condition}
+            threshold={0.7}
+          >
+            <div className={`heading-8`}>Acceptance of Term</div>
+            <div className={`body-1 ${st.tems__descriptionCondition}`}>
               By accessing or using any part of our website or services, you
               agree to be bound by these Terms and Conditions. If you do not
               agree to all the terms and conditions of this agreement, then you
               may not access the website or use any services.
             </div>
-          </div>
-          <div className={st.tems__condition}>
-            <div className={st.tems__titleCondition}>
-              Use of Website and Services
-            </div>
-            <div className={st.tems__descriptionCondition}>
+          </ObserverAnimation>
+          <ObserverAnimation
+            typeAnimation="right-to-left"
+            className={st.tems__condition}
+            threshold={0.7}
+          >
+            <div className={`heading-8`}>Use of Website and Services</div>
+            <div className={`body-1 ${st.tems__descriptionCondition}`}>
               You may use our website and services solely for lawful purposes
               and in accordance with these Terms and Conditions. You agree not
               to use our website or services:
@@ -60,10 +62,14 @@ const Tems = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className={st.tems__condition}>
-            <div className={st.tems__titleCondition}>Intellectual Property</div>
-            <div className={st.tems__descriptionCondition}>
+          </ObserverAnimation>
+          <ObserverAnimation
+            typeAnimation="left-to-right"
+            className={st.tems__condition}
+            threshold={0.7}
+          >
+            <div className={`heading-8`}>Intellectual Property</div>
+            <div className={`body-1 ${st.tems__descriptionCondition}`}>
               The content and materials available on our website and services,
               including but not limited to text, graphics, logos, images, and
               software, are the property of [Company Name] or its licensors and
@@ -73,26 +79,32 @@ const Tems = () => {
               purposes without obtaining a license to do so from [Company Name]
               or its licensors.
             </div>
-          </div>
-          <div className={st.tems__condition}>
-            <div className={st.tems__titleCondition}>
-              Changes to Terms and Conditions
-            </div>
-            <div className={st.tems__descriptionCondition}>
+          </ObserverAnimation>
+          <ObserverAnimation
+            typeAnimation="right-to-left"
+            className={st.tems__condition}
+            threshold={0.7}
+          >
+            <div className={`heading-8`}>Changes to Terms and Conditions</div>
+            <div className={`body-1 ${st.tems__descriptionCondition}`}>
               We reserve the right, at our sole discretion, to modify or replace
               these Terms and Conditions at any time. By continuing to access or
               use our website and services after any revisions become effective,
               you agree to be bound by the revised terms.
             </div>
-          </div>
-          <div className={st.tems__condition}>
-            <div className={st.tems__titleCondition}>Contact Us</div>
-            <div className={st.tems__descriptionCondition}>
+          </ObserverAnimation>
+          <ObserverAnimation
+            typeAnimation="left-to-right"
+            className={st.tems__condition}
+            threshold={0.7}
+          >
+            <div className={`heading-8`}>Contact Us</div>
+            <div className={`body-1 ${st.tems__descriptionCondition}`}>
               If you have any questions about these Terms and Conditions, please
               contact us using the information provided on our contact page.
             </div>
-          </div>
-        </ObserverAnimation>
+          </ObserverAnimation>
+        </div>
       </div>
     </section>
   );
