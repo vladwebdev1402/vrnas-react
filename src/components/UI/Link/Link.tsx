@@ -5,13 +5,14 @@ import { NavLink } from "react-router-dom";
 interface Props {
   to: string;
   children: React.ReactNode;
+  className?: string;
 }
 
-const Link: FC<Props> = ({ to, children }) => {
+const Link: FC<Props> = ({ to, children, className = "" }) => {
   const match = useMatch(to);
 
   return (
-    <NavLink to={to} className={`${match ? st.link__active : ""}`}>
+    <NavLink to={to} className={`${className} ${match ? st.link__active : ""}`}>
       {children}
     </NavLink>
   );

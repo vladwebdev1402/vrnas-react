@@ -1,0 +1,66 @@
+.notFound {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+
+.notFound__body {
+    flex: 0 1 55%;
+}
+
+.notFound__title {
+    margin-top: 12px;
+}
+
+.notFound__subtitle {
+    margin-top: 24px;
+}
+
+.notFound__btn {
+    margin-top: 24px;
+}
+
+.notFound__img {
+    z-index: -1;
+    width: 621px;
+    height: 502px;
+    right: -370px;
+    left: unset;
+}
+
+@media (max-width: 1116px) {
+    .notFound__img {
+        width: 522px;
+        height: 397px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .notFound__img {
+        width: 621px;
+        height: 502px;
+        top: 50%;
+    }
+
+    .notFound {
+        min-height: 1000px;
+    }
+
+    .notFound__body  {
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .notFound__img {
+        &::after {
+            width: 389.49px;
+            height: 389.49px;
+        }
+    }
+
+    .notFound__img {
+        right: -550px;
+    }
+}

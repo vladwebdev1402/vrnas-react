@@ -23,7 +23,7 @@ const Footer: FC = () => {
       >
         <div className={`${st.footer__body}`}>
           <div className={st.footer__contacts}>
-            <Link to={routerPaths.main}>
+            <Link className={`link ${st.footer__link}`} to={routerPaths.main}>
               <img className={st.footer__logo} src={logo} alt="" />
             </Link>
             <LinskList
@@ -51,17 +51,36 @@ const Footer: FC = () => {
                 st_ul={st.footer__links__list}
                 st_li={st.footer__links__item}
               >
-                <Link to={routerPaths.main}>Home</Link>
-                <Link to={routerPaths.pricingPlan}>Pricing Plan</Link>
-                <a className={`link`} href="#">
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.main}
+                >
+                  Home
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.pricingPlan}
+                >
+                  Pricing Plan
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.ourService}
+                >
                   Service
-                </a>
-                <a className={`link`} href="#">
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.resentArticles}
+                >
                   Blog
-                </a>
-                <a className={`link`} href="#">
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.ourTeam}
+                >
                   Our Team
-                </a>
+                </Link>
               </LinskList>
             </div>
             <div className={st.footer__links__container}>
@@ -71,18 +90,30 @@ const Footer: FC = () => {
                 st_li={st.footer__links__item}
               >
                 <Link to={routerPaths.about}>About us</Link>
-                <a className={`link`} href="#">
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.contacts}
+                >
                   Contact us
-                </a>
-                <a className={`link`} href="#">
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.faq}
+                >
                   FAQ
-                </a>
-                <a className={`link`} href="#">
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.temsAndConditions}
+                >
                   Tems & Conditions
-                </a>
-                <a className={`link`} href="#">
+                </Link>
+                <Link
+                  className={`link ${st.footer__link}`}
+                  to={routerPaths.privacyPolicy}
+                >
                   Privacy Policy
-                </a>
+                </Link>
               </LinskList>
             </div>
             <div className={st.footer__links__container}>

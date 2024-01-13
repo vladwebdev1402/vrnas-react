@@ -113,6 +113,11 @@
   font-weight: 300;
 }
 
+.footer__link {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .footer {
     margin-top: 100px;

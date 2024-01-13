@@ -15,26 +15,22 @@ import { OurTeamPage } from "@/pages/OurTeamPage";
 import { FAQPage } from "@/pages/FAQPage";
 import { TemsConditionsPage } from "@/pages/TemsConditionsPage";
 import { PrivicePolicyPage } from "@/pages/PrivicePolicyPage";
+import { NotFoundPage } from "@/pages/NotFoundPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={routerPaths.main} element={<Root />}>
-      <Route index element={<MainPage />}></Route>
-      <Route path={routerPaths.about} element={<AboutPage />}></Route>
-      <Route path={routerPaths.ourService} element={<OurServicePage />}></Route>
-      <Route path={routerPaths.ourTeam} element={<OurTeamPage />}></Route>
-      <Route path={routerPaths.faq} element={<FAQPage />}></Route>
-      <Route
-        path={routerPaths.pricingPlan}
-        element={<PricingPlanPage />}
-      ></Route>
+      <Route index element={<MainPage />} />
+      <Route path={routerPaths.about} element={<AboutPage />} />
+      <Route path={routerPaths.ourService} element={<OurServicePage />} />
+      <Route path={routerPaths.ourTeam} element={<OurTeamPage />} />
+      <Route path={routerPaths.faq} element={<FAQPage />} />
+      <Route path={routerPaths.pricingPlan} element={<PricingPlanPage />} />
       <Route
         path={routerPaths.temsAndConditions}
         element={<TemsConditionsPage />}
-      ></Route>
-      <Route
-        path={routerPaths.privacyPolicy}
-        element={<PrivicePolicyPage />}
-      ></Route>
+      />
+      <Route path={routerPaths.privacyPolicy} element={<PrivicePolicyPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Route>
   )
 );
