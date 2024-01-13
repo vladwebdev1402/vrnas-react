@@ -4,7 +4,6 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import WhyChooseUsAdvantages from "./components/WhyChooseUsAdvantages/WhyChooseUsAdvantages";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import OurTeam from "./components/OurTeam/OurTeam";
-import Subscribe from "@/components/Subscribe/Subscribe";
 import ShortFAQ from "@/components/ShortFAQ/ShortFAQ";
 
 const AboutPage = () => {
@@ -20,7 +19,6 @@ const AboutPage = () => {
       <WhyChooseUs />
       <OurTeam />
       <ShortFAQ />
-      <Subscribe />
     </>
   );
 };

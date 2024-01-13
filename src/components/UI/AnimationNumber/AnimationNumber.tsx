@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import { useObserve } from "@/hooks/useObserve";
+import st from "./AnimationNumber.module.scss";
 interface Props {
   num: number;
   children?: React.ReactNode;
@@ -24,17 +25,11 @@ const AnimationNumber: FC<Props> = ({
       thisNum !== num && setTimeout(setThisNum, 1000 / num, thisNum + 1);
   }, [isVisible, thisNum]);
 
-  if (component == "h1")
-    return (
-      <h1 className={className} ref={ref}>
-        {prev}
-        {thisNum}
-        {children}
-      </h1>
-    );
-
   return (
-    <div className={className} ref={ref}>
+    <div
+      className={`${component === "h1" ? st.numbers__h1 : ""} ${className}`}
+      ref={ref}
+    >
       {prev}
       {thisNum}
       {children}

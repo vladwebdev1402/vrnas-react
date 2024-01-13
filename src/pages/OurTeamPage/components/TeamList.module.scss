@@ -1,0 +1,36 @@
+.team {
+    margin-top: 150px;
+}
+
+.team__head {
+    text-align: center;
+}
+
+.team__title {
+    margin-top: 12px;
+}
+
+.team__list {
+    margin-top: 48px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 992px) {
+    .team {
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .team__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 568px) {
+    .team__list {
+        grid-template-columns: 1fr;
+
+    }
+}

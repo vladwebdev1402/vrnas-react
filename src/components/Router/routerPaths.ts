@@ -8,6 +8,7 @@ export const routerPaths = {
     ourService: root + "/services",
     pricingPlan: root + "/pricing",
     faq: root + "/faq",
+    ourTeam: root + "/team",
 }
 
 export const translatePath: {[key: string] : string} = {
@@ -15,7 +16,8 @@ export const translatePath: {[key: string] : string} = {
     "about": "About Us",
     "services": "Our Service",
     "pricing": "Pricing Plan",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "team": "Our Team",
 }
 
 export const navPaths: IPath[] = [
@@ -63,7 +65,7 @@ export const navPaths: IPath[] = [
             },
             {
                 name: "Our Team",
-                to: "",
+                to: routerPaths.ourTeam,
             },
             {
                 name: "Detail Service",

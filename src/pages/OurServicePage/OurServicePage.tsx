@@ -1,10 +1,9 @@
 import AffrodableServices from "@/components/AffrodableServices/AffrodableServices";
 import OurServices from "@/components/OurServices/OurServices";
 import PageTitle from "@/components/PageTitle/PageTitle";
-import Subscribe from "@/components/Subscribe/Subscribe";
 import WhatOurClientSays from "@/components/WhatOurClientSays/WhatOurClientSays";
 import React, { useEffect } from "react";
-import Numbers from "./components/Numbers/Numbers";
+import Numbers from "../../components/Numbers/Numbers";
 
 const OurServicePage = () => {
   useEffect(() => {
@@ -18,7 +17,6 @@ const OurServicePage = () => {
       <Numbers />
       <AffrodableServices />
       <WhatOurClientSays />
-      <Subscribe />
     </>
   );
 };
